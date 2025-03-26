@@ -2,18 +2,19 @@
 title: "About"
 image: profile.jpg
 about:
-  template: jolla
-  links:
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com
-    - icon: linkedin
-      text: LinkedIn
-      href: https://linkedin.com
-    - icon: github
-      text: Github
-      href: https://github.com
-
+  template: trestles
 ---
 
-About this blog
+Dollar 42 is a blog by Dollar 42, LLC, a tax advising firm.
+
+Dollar 42 writes about simple, sensible strategies for financial decision making while acknowledging that personal financial is _highly personal_ and will necessarily vary between different individuals.
+
+[Andy Lindeman, EA](https://www.linkedin.com/in/andylindeman/) is the owner of Dollar 42, LLC and editor of the Dollar 42 blog. Dollar 42, LLC offers paid consulting engagements for tax projections and certain tax advice. Andy has experience with U.S. personal income tax, equity (stock) compensation, retirement accounts, investment income and certain small business issues.
+
+:::{.callout-note}
+The content on the Dollar 42 blog is intended for informational and educational purposes only. The content reflects personal opinions and experiences and is not individualized advice. Readers must consult with a qualified advisor who considers their individual circumstances before making any financial decisions.
+
+Financial planning, tax planning and investing each involve risks, including the potential loss of principal and/or assets. Andy Lindeman and Dollar 42, LLC provide no warranties, express or implied, that the information on this blog is accurate or suitable for any individual circumstance.
+
+By accessing the Dollar 42 blog, you acknowledge that Andy Lindeman and Dollar 42, LLC will not be held liable for any decisions you make based on its content. Use of this website is entirely at your own risk.
+:::

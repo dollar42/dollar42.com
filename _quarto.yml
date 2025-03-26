@@ -4,18 +4,15 @@ project:
 website:
   title: "dollar42"
   navbar:
+    search: true
     right:
       - about.qmd
-      - icon: github
-        href: https://github.com/
-      - icon: twitter
-        href: https://twitter.com
+      - text: "Meet"
+        href: https://cal.com/dollar42/consultation
+
 format:
   html:
     theme:
       - sandstone
       - brand
     css: styles.css
-
-
-
