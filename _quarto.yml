@@ -3,9 +3,12 @@ project:
 
 website:
   title: "dollar42"
+  description: "simplify $, live well"
   navbar:
+    background: primary
     search: true
-    right:
+    pinned: true
+    left:
       - about.qmd
       - text: "Meet"
         href: https://cal.com/dollar42/consultation
