@@ -1,12 +1,17 @@
 ---
 title: "dollar42"
+description: "simplify $, live well"
 listing:
+  categories: false
   contents: posts
+  date-format: full
+  feed:
+    items: 10
+    type: full
+  filter-ui: false
+  sort-ui: false
   sort: "date desc"
   type: default
-  categories: true
-  sort-ui: false
-  filter-ui: false
 page-layout: full
 title-block-banner: false
 ---

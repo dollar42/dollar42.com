@@ -3,6 +3,7 @@ project:
 
 website:
   title: "dollar42"
+  site-url: "https://www.dollar42.com"
   description: "simplify $, live well"
   navbar:
     background: primary
