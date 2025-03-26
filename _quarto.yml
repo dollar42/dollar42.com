@@ -4,7 +4,7 @@ project:
 website:
   title: "dollar42"
   site-url: "https://www.dollar42.com"
-  description: "simplify $, live well"
+  description: "simplify $, live better"
   search:
     location: navbar
     type: textbox

@@ -1,6 +1,6 @@
 ---
 title: "dollar42"
-description: "simplify $, live well"
+description: "simplify $, live better"
 listing:
   categories: false
   contents: posts

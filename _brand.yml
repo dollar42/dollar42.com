@@ -1,3 +1,6 @@
 meta:
   name: "Dollar 42"
   link: "https://dollar42.com"
+
+color:
+  background: "#e9ecef" # $gray-200 from bootstrap/_variables.scss
