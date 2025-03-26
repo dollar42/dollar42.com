@@ -1,0 +1,8 @@
+/*-- scss:rules --*/
+
+// Navbar looks better if it does not take up the full width on large screens
+.navbar-container {
+    // Replacing .container-fluid with .container-lg would be best, but this is
+    // the best I can do without control of the HTML as far as I can tell.
+    @extend .container-lg;
+}

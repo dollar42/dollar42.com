@@ -5,6 +5,10 @@ website:
   title: "dollar42"
   site-url: "https://www.dollar42.com"
   description: "simplify $, live well"
+  search:
+    location: navbar
+    type: textbox
+    keyboard-shortcut: "/"
   navbar:
     background: primary
     search: true
@@ -23,4 +27,4 @@ format:
     theme:
       - sandstone
       - brand
-    css: styles.css
+      - custom.scss
