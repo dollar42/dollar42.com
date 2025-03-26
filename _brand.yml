@@ -3,4 +3,4 @@ meta:
   link: "https://dollar42.com"
 
 color:
-  background: "#e9ecef" # $gray-200 from bootstrap/_variables.scss
+  background: "#f8f9fa" # $gray-100 from bootstrap/_variables.scss
