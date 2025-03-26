@@ -11,7 +11,11 @@ website:
     left:
       - about.qmd
       - text: "Meet"
-        href: https://cal.com/dollar42/consultation
+        menu:
+          - text: "Intro"
+            href: https://cal.com/dollar42/intro
+          - text: "Consultation (paid)"
+            href: https://cal.com/dollar42/consultation
 
 format:
   html:
