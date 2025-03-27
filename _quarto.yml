@@ -5,7 +5,11 @@ website:
   title: "Dollar42"
   description: "simplify $, live better"
   site-url: "https://www.dollar42.com"
-  google-analytics: "G-XK79WBDEMB"
+  google-analytics:
+    tracking-id: "G-XK79WBDEMB"
+    storage: cookies
+    anonymize-ip: true
+    version: 4
   cookie-consent: true
   reader-mode: true
   search:
