@@ -4,8 +4,10 @@ project:
 website:
   title: "Dollar 42"
   description: "simplify $, live better"
-  reader-mode: true
   site-url: "https://www.dollar42.com"
+  google-analytics: "G-XK79WBDEMB"
+  cookie-consent: true
+  reader-mode: true
   search:
     location: navbar
     type: textbox
