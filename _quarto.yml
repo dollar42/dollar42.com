@@ -2,9 +2,10 @@ project:
   type: website
 
 website:
-  title: "dollar42"
-  site-url: "https://www.dollar42.com"
+  title: "Dollar 42"
   description: "simplify $, live better"
+  reader-mode: true
+  site-url: "https://www.dollar42.com"
   search:
     location: navbar
     type: textbox
