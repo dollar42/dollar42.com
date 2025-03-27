@@ -3,32 +3,37 @@ project:
 
 website:
   title: "Dollar42"
-  description: "simplify $, live better"
+  description: "simplify finances, live better"
   site-url: "https://www.dollar42.com"
   google-analytics:
     tracking-id: "G-XK79WBDEMB"
     storage: cookies
     anonymize-ip: true
     version: 4
-  cookie-consent: true
+  cookie-consent:
+    type: implied
+    style: simple
+    policy-url: "https://www.dollar42.com/privacy.html" # TODO
   reader-mode: true
   search:
     location: navbar
     type: textbox
     keyboard-shortcut: "/"
   navbar:
-    background: primary
+    title: false
+    logo: "logo.png"
+    logo-alt: "Dollar42 logo"
+    collapse: true
+    collapse-below: "lg"
+    background: info
     search: true
     pinned: true
     left:
-      - about.qmd
-      - text: "Meet"
-        menu:
-          - text: "Intro"
-            href: https://cal.com/dollar42/intro
-          - text: "Consultation (paid)"
-            href: https://cal.com/dollar42/consultation
-
+      - icon: house-fill
+        href: index.qmd
+        text: "Home"
+      - icon: info-circle-fill
+        href: about.qmd
 format:
   html:
     theme:

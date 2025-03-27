@@ -1,5 +1,6 @@
 ---
 title: "Dollar42"
+description: "simplify finances, live better"
 listing:
   categories: false
   contents: posts
@@ -12,7 +13,8 @@ listing:
   sort: "date desc"
   type: default
 page-layout: full
-title-block-banner: false
+title-block-banner: true
+title-block-style: default
 ---
 
 

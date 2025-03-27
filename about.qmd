@@ -1,8 +1,13 @@
 ---
 title: "About"
 image: profile.jpg
+image-shape: rounded
 about:
-  template: broadside
+  template: trestles
+  links:
+    - icon: person-video
+      href: https://cal.com/dollar42/intro
+      text: "Schedule an Intro Call"
 ---
 
 Dollar42 is a blog by Dollar 42, LLC, a tax advising firm.
