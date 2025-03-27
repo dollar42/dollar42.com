@@ -3,12 +3,15 @@ title: "Dollar42"
 description: "simplify finances, live better"
 listing:
   categories: false
-  contents: posts
+  contents:
+    - posts
   date-format: full
   feed:
     items: 10
+    image: logo.png
     type: full
   filter-ui: false
+  page-size: 10
   sort-ui: false
   sort: "date desc"
   type: default
