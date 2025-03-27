@@ -1,5 +1,5 @@
 ---
-title: "Dollar42"
+title: "Dollar42 Blog"
 description: "simplify finances, live better"
 listing:
   categories: false

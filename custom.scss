@@ -6,3 +6,8 @@
     // the best I can do without control of the HTML as far as I can tell.
     @extend .container-lg;
 }
+
+// Title banner is visually distinct from navbar
+.quarto-title-block .quarto-title-banner {
+    background: $gray-900;
+}
