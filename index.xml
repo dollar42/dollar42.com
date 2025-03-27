@@ -5,11 +5,11 @@
       xmlns:dc="http://purl.org/dc/elements/1.1/" 
       version="2.0">
 <channel>
-<title>dollar42</title>
+<title>Dollar42</title>
 <link>https://www.dollar42.com/</link>
 <atom:link href="https://www.dollar42.com/index.xml" rel="self" type="application/rss+xml"/>
-<description>simplify $, live better</description>
+<description>simplify finances, live better</description>
 <generator>quarto-1.6.42</generator>
-<lastBuildDate>Wed, 26 Mar 2025 19:40:49 GMT</lastBuildDate>
+<lastBuildDate>Thu, 27 Mar 2025 02:12:06 GMT</lastBuildDate>
 </channel>
 </rss>
