@@ -39,7 +39,7 @@ website:
           - href: about.qmd
           - href: privacy.qmd
   body-footer: |-
-    Copyright © Dollar 42, LLC
+    <p><small>Copyright © Dollar 42, LLC</small></p>
 format:
   html:
     theme:
