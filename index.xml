@@ -8,7 +8,7 @@
 <title>Dollar42</title>
 <link>https://www.dollar42.com/</link>
 <atom:link href="https://www.dollar42.com/index.xml" rel="self" type="application/rss+xml"/>
-<description>simplify finances, live better</description>
+<description>simplify dollars, live better</description>
 <image>
 <url>https://www.dollar42.com/logo.png</url>
 <title>Dollar42</title>
@@ -17,6 +17,6 @@
 <width>144</width>
 </image>
 <generator>quarto-1.6.42</generator>
-<lastBuildDate>Fri, 28 Mar 2025 18:04:27 GMT</lastBuildDate>
+<lastBuildDate>Fri, 28 Mar 2025 18:06:39 GMT</lastBuildDate>
 </channel>
 </rss>
