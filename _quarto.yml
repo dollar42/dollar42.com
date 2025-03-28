@@ -14,7 +14,7 @@ website:
     type: implied
     style: simple
     site-name: "Dollar42"
-    policy-url: "https://www.dollar42.com/privacy.html" # TODO
+    policy-url: "https://www.dollar42.com/privacy.html"
   reader-mode: true
   search:
     location: navbar
