@@ -1,6 +1,6 @@
 ---
 title: "Dollar42 Blog"
-description: "simplify finances, live better"
+description: "simplify dollars, live better"
 listing:
   categories: false
   contents:

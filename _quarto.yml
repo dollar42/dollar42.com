@@ -3,7 +3,7 @@ project:
 
 website:
   title: "Dollar42"
-  description: "simplify finances, live better"
+  description: "simplify dollars, live better"
   site-url: "https://www.dollar42.com"
   google-analytics:
     tracking-id: "G-XK79WBDEMB"
