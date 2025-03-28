@@ -38,6 +38,8 @@ website:
         menu:
           - href: about.qmd
           - href: privacy.qmd
+  body-footer: |-
+    Copyright © Dollar 42, LLC
 format:
   html:
     theme:
