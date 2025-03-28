@@ -34,7 +34,10 @@ website:
         href: index.qmd
         text: "Home"
       - icon: info-circle-fill
-        href: about.qmd
+        text: "About"
+        menu:
+          - href: about.qmd
+          - href: privacy.qmd
 format:
   html:
     theme:
