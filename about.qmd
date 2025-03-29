@@ -10,16 +10,16 @@ about:
       text: "Schedule an Intro Call"
 ---
 
-Dollar42 is a blog by Dollar 42, LLC, a tax advising firm.
+Dollar42 is a blog evangelizing simple and sensible financial and tax decision making. It is a production of Dollar 42, LLC.
 
-Dollar42 publishes content on sensible financial decision making, while acknowledging that personal financial is _highly personal_ and will necessarily vary between different individuals.
+[Andy Lindeman, EA](https://www.linkedin.com/in/andylindeman/) is the editor of the blog. Andy is licensed as an [enrolled agent](https://www.irs.gov/tax-professionals/enrolled-agents/enrolled-agent-information) by the IRS.
 
-[Andy Lindeman, EA](https://www.linkedin.com/in/andylindeman/) is the owner of Dollar 42, LLC and editor of the Dollar42 blog. Dollar 42, LLC offers paid consulting engagements for tax projections and certain other tax advice. Andy has experience with U.S. personal income tax, stock compensation, retirement accounts, investment taxation and certain small business issues.
+Dollar 42, LLC offers limited paid engagements for tax projections and advice. Andy has experience with U.S. personal income tax, stock compensation, retirement accounts, investment taxation and certain small business issues. **Dollar 42, LLC does not offer tax return preparation or investment advice.**
 
-If you think Andy may be able to help, [schedule an intro call](https://cal.com/dollar42/intro).
+If you think we may be able to help, [schedule an intro call](https://cal.com/dollar42/intro).
 
 :::{.callout-note}
-The content on the Dollar42 blog is intended for informational and educational purposes only. The content reflects personal opinions and experiences and is not individualized advice. Readers must consult with a qualified advisor who considers their individual circumstances before making any financial decisions.
+The content on the Dollar42 blog is intended for informational and educational purposes only. The content reflects personal opinions and experiences and is not individualized advice. Readers must consult with a qualified advisor who considers their individual circumstances before making any financial or tax decisions.
 
 Financial planning, tax planning and investing each involve risks, including the potential loss of principal and/or assets. Andy Lindeman and Dollar 42, LLC provide no warranties, express or implied, that the information on this blog is accurate or suitable for any individual circumstance.
 
