@@ -10,13 +10,13 @@
 <atom:link href="https://www.dollar42.com/index.xml" rel="self" type="application/rss+xml"/>
 <description>simplify dollars, live better</description>
 <image>
-<url>https://www.dollar42.com/logo.png</url>
+<url>https://www.dollar42.com/favicon.png</url>
 <title>Dollar42</title>
 <link>https://www.dollar42.com/</link>
-<height>55</height>
-<width>144</width>
+<height>116</height>
+<width>44</width>
 </image>
 <generator>quarto-1.6.42</generator>
-<lastBuildDate>Sat, 29 Mar 2025 18:06:40 GMT</lastBuildDate>
+<lastBuildDate>Sat, 29 Mar 2025 18:15:39 GMT</lastBuildDate>
 </channel>
 </rss>
