@@ -6,7 +6,7 @@ website:
   description: "simplify dollars, live better"
   site-url: "https://www.dollar42.com"
   google-analytics:
-    tracking-id: "G-XK79WBDEMB"
+    tracking-id: "G-PZZF4E441G"
     storage: cookies
     anonymize-ip: true
     version: 4
