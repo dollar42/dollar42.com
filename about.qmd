@@ -10,7 +10,7 @@ about:
       text: "Schedule an Intro Call"
 ---
 
-Dollar42 is a blog evangelizing simple and sensible financial and tax decision making. It is a production of Dollar 42, LLC.
+Dollar42 is a blog evangelizing simple and sensible financial and tax decision making. It is a product of Dollar 42, LLC.
 
 [Andy Lindeman, EA](https://www.linkedin.com/in/andylindeman/) is the editor of the blog. Andy is licensed as an [enrolled agent](https://www.irs.gov/tax-professionals/enrolled-agents/enrolled-agent-information) by the IRS.
 
