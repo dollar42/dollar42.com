@@ -39,6 +39,9 @@ website:
         menu:
           - href: about.qmd
           - href: privacy.qmd
+    right:
+      - icon: rss
+        href: index.xml
   margin-header: |-
     <div class="ml-embedded" data-form="k2N5Mp"></div>
   margin-footer: |-
