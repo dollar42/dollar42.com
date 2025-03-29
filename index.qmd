@@ -8,7 +8,7 @@ listing:
   date-format: full
   feed:
     items: 10
-    image: logo.png
+    image: favicon.png
     type: full
   filter-ui: false
   page-size: 10
