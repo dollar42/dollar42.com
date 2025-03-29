@@ -94,6 +94,8 @@ The Company may use software programs to create summary statistics, which are us
 
 For site security purposes and to ensure that this service remains available to all users, the Company uses software programs to monitor network traffic to identify unauthorized attempts to upload or change information, or otherwise cause damage.
 
+Please be aware that no security measures are perfect or impenetrable, and we cannot guarantee "perfect security." In addition, any information you send to us may not be secure while in transit. We recommend that you do not use insecure channels to communicate sensitive or confidential information to us.
+
 ## Policy Changes
 
 It is our policy to post any changes we make to our privacy policy on this page. You are responsible for periodically visiting the Website and this Privacy Policy to check for any changes.
