@@ -1,5 +1,10 @@
 ---
 title: Privacy Policy
+format:
+  html:
+    include-in-header:
+      - text: |-
+          <meta name="robots" content="noindex">
 ---
 
 Dollar 42, LLC ("Company", "Dollar42," "we," or "us") respects your privacy and is committed to protecting it through this Privacy Policy.
