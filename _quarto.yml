@@ -46,7 +46,7 @@ website:
     <div class="ml-embedded" data-form="k2N5Mp"></div>
   margin-footer: |-
     <p class="mt-5 mb-0"><small>Copyright &copy; Dollar 42, LLC</small></p>
-    <p><small><a href="/about.html"><i class="bi bi-info-circle-fill"></i> about/disclaimer</a></small></p>
+    <p><small><a class="text-decoration-none" href="/about.html"><i class="bi bi-info-circle-fill"></i> about/disclaimer</a></small></p>
 format:
   html:
     include-in-header:
