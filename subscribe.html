@@ -150,7 +150,8 @@ cookieconsent.run({
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./subscribe.html" aria-current="page"> 
+    <a class="nav-link active" href="./subscribe.html" aria-current="page"> <i class="bi bi-envelope-at-fill" role="img">
+</i> 
 <span class="menu-text">Subscribe</span></a>
   </li>  
   <li class="nav-item compact">
@@ -321,6 +322,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         if (link.dataset.originalHref !== undefined) {
           link.href = link.dataset.originalHref;
         }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+          // default icon
+          link.classList.add("external");
       }
     }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
