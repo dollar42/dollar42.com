@@ -19,9 +19,9 @@ Dollar42 is a blog evangelizing simple and sensible financial and tax decision m
 
 [Andy Lindeman, EA](https://www.linkedin.com/in/andylindeman/) is the editor of the blog. Andy is licensed as an [enrolled agent](https://www.irs.gov/tax-professionals/enrolled-agents/enrolled-agent-information) by the IRS.
 
-Dollar 42, LLC offers limited paid engagements for tax projections and advice. Andy has experience with U.S. personal income tax, stock compensation, retirement accounts, investment taxation and certain small business issues. **Dollar 42, LLC does not offer tax return preparation or investment advice.**
+Andy has experience with U.S. personal income tax, stock compensation, retirement accounts, investment taxation and certain small business issues. **Dollar 42, LLC does not offer tax return preparation or investment advice.**
 
-If you think we may be able to help, [schedule an intro call](https://cal.com/dollar42/intro).
+<!-- If you think we may be able to help, [schedule an intro call](https://cal.com/dollar42/intro). -->
 
 :::{.callout-note}
 The content on the Dollar42 blog is intended for informational and educational purposes only. The content reflects personal opinions and experiences and is not individualized advice. Readers must consult with a qualified advisor who considers their individual circumstances before making any financial or tax decisions.
