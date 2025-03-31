@@ -6,6 +6,7 @@ website:
   description: "simplify dollars, live better"
   site-url: "https://www.dollar42.com"
   favicon: "favicon.png"
+  draft-mode: unlinked
   google-analytics:
     tracking-id: "G-PZZF4E441G"
     storage: cookies
