@@ -1,0 +1,11 @@
+---
+title: Subscribe
+format:
+  html:
+    include-in-header:
+      - text: |-
+          <meta name="robots" content="noindex">
+          <style type="text/css">.margin-header-item .ml-embedded { display: none; }</style>:
+---
+
+<div class="ml-embedded" data-form="k2N5Mp"></div>

@@ -40,6 +40,7 @@ website:
           - href: about.qmd
           - href: privacy.qmd
     right:
+      - href: subscribe.qmd
       - icon: rss
         href: index.xml
   margin-header: |-
