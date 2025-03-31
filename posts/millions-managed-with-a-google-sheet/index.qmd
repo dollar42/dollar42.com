@@ -1,0 +1,164 @@
+
+---
+title: "Millions Managed With A Google Sheet"
+description: "Google Sheets is the primary tool I use for managing a large index fund portfolio across multiple accounts at multiple institutions."
+date: "2025-04-01"
+image: "rebalance_matrix.png"
+draft: true
+lightbox: true
+format:
+  html:
+    other-links:
+      - text: Investment Spreadsheet v0.1 (Google Sheets template)
+        icon: file-spreadsheet
+        href: https://docs.google.com/spreadsheets/d/186vSKdp0gJEWqmRKm1ezea9mgBACOBJQ_tc5dOl553c/template/preview
+---
+
+Google Sheets is the primary tool I use for managing a large index fund portfolio across multiple accounts at multiple institutions.
+
+My investment spreadsheet is now available as a free template, and I am writing a series of posts on what it is and why I built it like I did.
+
+::: callout-tip
+You can subscribe to future posts [via email](/subscribe.html) or [RSS](/index.xml).
+:::
+
+## The Spreadsheet
+
+![Rebalance Matrix (explained later) for an example portfolio in the investing spreadsheet](rebalance_matrix.png)
+
+My investment philosophy is simple, but it does require a global view of my portfolio.
+
+I use the spreadsheet to answer several important questions:
+
+1. What are my investments across _all_ of my (and my spouse's) accounts? This means IRAs, 401(k)s, HSAs, taxable accounts, etc. All of them!
+1. What is my actual asset allocation^[For example, what percentage is invested in US stocks relative to other asset classes across _all_ of my accounts?] across _all_ of my accounts?
+1. How does my actual asset allocation compare to my target (desired) allocation?
+
+And, of course: How do I fix it when an actual amount strays too far from a target amount?
+
+The spreadsheet does not need much information. Currently there are input sheets for:
+
+- Account names and types.
+- Fund symbols and the asset class(es) they represent.
+- Holdings/transactions: a fund and the number of shares I own per account (e.g., Roth IRA, 936 shares of VTI^[VTI and other funds are used as examples only. Any fund supported by GOOGLEFINANCE can be used. Or worst case, the share price can be provided manually for custom funds or assets.]).
+
+::: { .column-page layout-ncol=3 }
+![Accounts](accounts.png)
+
+![Funds](funds.png)
+
+![Transactions](transactions.png)
+:::
+
+With the power of the [`GOOGLEFINANCE` function](https://support.google.com/docs/answer/3093281?hl=en), the spreadsheet automatically produces an Account Holdings report showing accounts, holdings and current values:
+
+![Account Holdings](account_holdings.png)
+
+I use this report to crosscheck against my online statements. If anything is too different, I probably missed entering a transaction into the spreadsheet.
+
+Because the `GOOGLEFINANCE` function is used, current values dynamically recalculate as share prices change over time. If share _count_ changes (e.g., a trade is placed or a dividend is reinvested), a new transaction must be added to the spreadsheet to account for it.
+
+I also print this report to include with my estate plan. It might aid my spouse or executor when they need to inventory accounts when I am incapacitated or die.
+
+## Asset Allocation
+
+The next sheet shifts to asset allocation. Asset allocation is [one of the most important decisions an investor makes](https://www.youtube.com/watch?v=p25PPBgMiEk).
+
+I codify my target asset allocation with variables and formulas that show the thinking behind the ultimately calculated percentages:
+
+![Asset Allocation](asset_allocation.png)
+
+In this example portfolio, Alice and Bob create an asset allocation that:
+
+- Reserves $100,000 as a cash buffer off the top.
+- Invests the rest 65% in stocks (and 35% in bonds by subtraction).
+- Invests 60% _of the stock allocation_ in US stocks (and 40% in non-US stocks by subtraction).
+- Invests 30% _of the bond allocation_ in TIPS[^TIPS] (and 70% in nominal/nom. bonds by subtraction).
+
+In cell B9-C9, $100,000 is automatically calculated as 4.57% of their roughly $2.2 million portfolio. The allocations to all other asset classes are also automatically adjusted downward slightly to account for the cash buffer.
+
+A cash buffer is optional, but I find it important to support in a simple way.
+
+The variable names and values on the right are both editable. In other experiments, I have replaced them with an entirely different set as a way to mock out and explore different portfolio constructions.
+
+## Rebalance Matrix
+
+With the target asset allocation in place, the spreadsheet automatically produces its second report, the Rebalance Matrix:
+
+![Rebalance Matrix](rebalance_matrix.png)
+
+This report places accounts vertically on the left and asset classes horizontally across the top.
+
+Each cell in the inner matrix pairs a fund with account and asset class.
+
+In cell B12, $257,250 of VTI (a US stock fund) is owned in the Roth IRA (Alice) account and is in the US Stocks asset class. It is the only fund owned in that account.
+
+In cell C14, $310,500 of VXUS (an international stock fund) is owned in the Roth IRA (Bob) account and is in the Int'l Stocks asset class. Similarly, it is the only fund owned in its account.
+
+Different funds in the same asset class are "stacked" vertically. Cells B20-B23 show 65% of VT and 100% of VTI allocated to US Stocks within the Brokerage (Joint) account. 35% of VT, its non-US allocation, is shown in cell C20 under the Int'l Stocks asset class. The Brokerage (Joint) account owns several funds.
+
+Looking back toward the top in rows 4-10, Target (% and \$) and Actual show target and actual asset class allocations in percent and dollars, summed by column, representing the allocations _summed across all accounts_.
+
+If target and actual deviate too far, the Difference cells will become more yellow and eventually red, indicating that money should ideally start moving from overperforming asset classes to relatively underperforming ones ("sell high, buy low!").
+
+Alice and Bob probably do _not_ need to rebalance in this example. They are within 1 percentage point of their desired asset allocation in every asset class (row 7). The largest deviation is shown in cell D7 and D10 but is small compared to their portfolio.
+
+### A Different Scenario
+
+Let's consider if Alice and Bob decide to increase their stock allocation to 75% (from 65%). In the Asset Allocation sheet:
+
+![Changing the stock allocation to 75%](stocks_to_75.png)
+
+The Rebalance Matrix sheet automatically regenerates^[Sometimes it does not automatically regenerate, but a value in the orange cell can be changed to force it to recalculate]:
+
+![Rebalance Matrix with 75% target stock allocation](rebalance_matrix_75.png)
+
+Alice and Bob may now want to start moving money _out_ of bonds and _into_ stocks.
+
+US stocks are now 5.24 percentage points (cell B7) from target. $114,579 (cell B10) needs to flow from other asset classes into US Stocks to rebalance exactly. It's not dire compared to their total portfolio size, but it is a little out of balance.
+
+Rebalancing can be a complicated exercise involving nuanced information such as future financial goals, unrealized gain amounts, fund availability, desire for simplicity, etc.
+
+For this example, I will go to the Transactions sheet to make two new entries:
+
+![A trial rebalance in the Transactions sheet](rebalance_in_action.png)
+
+These rows represent an exchange Alice could _consider_:
+
+1. A sale of $115,000 (_negative_) of FXNAX, a nominal bond fund. $115,000 is my rounded version of the $114,579 inflow (from earlier) needed to rebalance the US Stocks asset class.
+1. With the proceeds, a purchase of $115,000 (_positive_ shares) of FSKAX, a US stock fund.
+
+I used `=115000 / GOOGLEFINANCE("SYMBOL")` to get the rough number of shares for $115,000 of each fund at today's prices. For the sale, I used `-115000`, a negative number.
+
+If Alice actually executed this trade, she would later change the values to the exact share counts when the trade settled.
+
+Adding these two transactions causes the Rebalance Matrix to automatically regenerate:
+
+![Rebalance Matrix after the exchange](rebalance_matrix_after_trade.png)
+
+In cells B16-D17, the exchange is shown as $115,000 of newly purchased FSKAX (the stock fund) while FXNAX (the bond fund) shows a balance reduced by $115,000 compared to the prior screenshot.
+
+The Difference columns for US Stocks and Nom. Bonds are noticably more green.
+
+Although there is more to do, this exchange would help get the portfolio closer to alignment with its new target. If it hadn't, I would quickly delete the two mock transactions and try something else.
+
+Mocking out possible trades all at once has made rebalancing a lot more easy for me. And it is much quicker in a spreadsheet than most other tools.
+
+## Summary
+
+I am a long-term investor. That requires:
+
+1. Creating an investment plan based on sound reasoning.
+2. Sticking to the investment plan over many decades.
+3. Ignoring noise from investors playing a different (short-term) game.
+
+The spreadsheet is my attempt to give myself useful, actionable information without the noise that most commercial tools spam at me whenever I login.
+
+A portfolio of millions of dollars can be managed with a spreadsheet when it is constructed from a thoughtful handful of high quality, low fee funds in a small set of diversified asset classes. Complex investments or complicated management are not necessarily required even at relatively high balances.
+
+An early version of the spreadsheet (v0.1) is available as a Google Sheets template here: [Investment Spreadsheet v0.1 (Google Sheets template)](https://docs.google.com/spreadsheets/d/186vSKdp0gJEWqmRKm1ezea9mgBACOBJQ_tc5dOl553c/template/preview).
+
+And I will write more about it here. Stay tuned!
+
+
+[^TIPS]: Treasury Inflation Protected Securities (government bonds with inflation protection in some cases)
