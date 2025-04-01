@@ -40,6 +40,9 @@ website:
         menu:
           - href: about.qmd
           - href: privacy.qmd
+      - icon: file-spreadsheet-fill
+        text: "The Spreadsheet"
+        href: posts/millions-managed-with-a-google-sheet
     right:
       - icon: envelope-at-fill
         href: subscribe.qmd
