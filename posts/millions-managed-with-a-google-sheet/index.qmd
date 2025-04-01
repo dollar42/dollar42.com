@@ -99,7 +99,7 @@ Different funds in the same asset class are "stacked" vertically. Cells B20-B23 
 
 Looking back toward the top in rows 4-10, Target (% and \$) and Actual show target and actual asset class allocations in percent and dollars, summed by column, representing the allocations _summed across all accounts_.
 
-If target and actual deviate too far, the Difference cells will become more yellow and eventually red, indicating that money should ideally start moving from overperforming asset classes to relatively underperforming ones ("sell high, buy low!").
+If target and actual deviate too far, the Difference cells will become more yellow and eventually red, indicating that money should ideally start moving from well performing asset classes to relatively underperforming ones ("sell high, buy low!").
 
 Alice and Bob probably do _not_ need to rebalance in this example. They are within 1 percentage point of their desired asset allocation in every asset class (row 7). The largest deviation is shown in cell D7 and D10 but is small compared to their portfolio.
 
@@ -119,14 +119,14 @@ US stocks are now 5.24 percentage points (cell B7) from target. $114,579 (cell B
 
 Rebalancing can be a complicated exercise involving nuanced information such as future financial goals, unrealized gain amounts, fund availability, desire for simplicity, etc.
 
-For this example, I will go to the Transactions sheet to make two new entries:
+For this example, I will show one possible transaction in what might need to be multiple transactions to fully complete the rebalance:
 
 ![A trial rebalance in the Transactions sheet](rebalance_in_action.png)
 
-These rows represent an exchange Alice could _consider_:
+These rows represent an exchange Alice could consider to rebalance from Bonds and into US Stocks in her Example Corp 401(k):
 
-1. A sale of $115,000 (_negative_) of FXNAX, a nominal bond fund. $115,000 is my rounded version of the $114,579 inflow (from earlier) needed to rebalance the US Stocks asset class.
-1. With the proceeds, a purchase of $115,000 (_positive_ shares) of FSKAX, a US stock fund.
+1. A sale of $115,000 (_negative_ share count) of FXNAX, a fund in the Bonds category that is currently overweight by $133,486 (cell D10).
+1. With the proceeds, a purchase of $115,000 (_positive_ share count) of FSKAX, a US stock fund. $115,000 is a rounded off version of the current $114,579 inflow (cell B10) needed to reach the target allocation of US Stocks.
 
 I used `=115000 / GOOGLEFINANCE("SYMBOL")` to get the rough number of shares for $115,000 of each fund at today's prices. For the sale, I used `-115000`, a negative number.
 
@@ -140,7 +140,7 @@ In cells B16-D17, the exchange is shown as $115,000 of newly purchased FSKAX (th
 
 The Difference columns for US Stocks and Nom. Bonds are noticably more green.
 
-Although there is more to do, this exchange would help get the portfolio closer to alignment with its new target. If it hadn't, I would quickly delete the two mock transactions and try something else.
+Although there is more to do with Int'l Stocks and TIPS, this exchange would help get the portfolio closer to alignment with its new target. If it hadn't or if I spotted a better sequence of transactions, I would quickly delete the two mock transactions and try something else.
 
 Mocking out possible trades all at once has made rebalancing a lot more easy for me. It is much quicker in a spreadsheet than other tools I have tried.
 
