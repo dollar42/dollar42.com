@@ -1,7 +1,7 @@
 
 ---
 title: "Millions Managed with a Google Sheet"
-description: "Google Sheets is my primary tool for managing a large index fund portfolio spanning multiple accounts at multiple institutions."
+description: "Google Sheets is my primary tool for managing a large index fund portfolio spanning multiple accounts at several institutions."
 date: "2025-04-02"
 image: "rebalance_matrix.png"
 draft: true
@@ -14,7 +14,7 @@ format:
         href: https://docs.google.com/spreadsheets/d/186vSKdp0gJEWqmRKm1ezea9mgBACOBJQ_tc5dOl553c/template/preview
 ---
 
-Google Sheets is my primary tool for managing a large index fund portfolio spanning multiple accounts at multiple institutions.
+Google Sheets is my primary tool for managing a large index fund portfolio spanning multiple accounts at several institutions.
 
 An early version of my investment spreadsheet is available for feedback as a [free template](https://docs.google.com/spreadsheets/d/186vSKdp0gJEWqmRKm1ezea9mgBACOBJQ_tc5dOl553c/template/preview). This is the first post in a series about the spreadsheet and its development.
 
