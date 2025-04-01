@@ -115,7 +115,7 @@ The Rebalance Matrix sheet automatically regenerates^[Sometimes it does not auto
 
 Alice and Bob may now want to start moving money _out_ of bonds and _into_ stocks.
 
-US stocks are now 5.24 percentage points (cell B7) from target. $114,579 (cell B10) needs to flow from other asset classes into US Stocks to rebalance exactly. It's not dire compared to their total portfolio size, but it is a little out of balance.
+US stocks are now 5.24 percentage points (cell B7) from target. $114,579 (cell B10) needs to flow from other asset classes into US Stocks to rebalance exactly.
 
 Rebalancing can be a complicated exercise involving nuanced information such as future financial goals, unrealized gain amounts, fund availability, desire for simplicity, etc.
 
@@ -142,7 +142,7 @@ The Difference columns for US Stocks and Nom. Bonds are noticably more green.
 
 Although there is more to do, this exchange would help get the portfolio closer to alignment with its new target. If it hadn't, I would quickly delete the two mock transactions and try something else.
 
-Mocking out possible trades all at once has made rebalancing a lot more easy for me. And it is much quicker in a spreadsheet than most other tools.
+Mocking out possible trades all at once has made rebalancing a lot more easy for me. It is much quicker in a spreadsheet than other tools I have tried.
 
 ## Summary
 
