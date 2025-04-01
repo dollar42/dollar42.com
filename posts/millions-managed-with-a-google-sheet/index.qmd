@@ -16,7 +16,7 @@ format:
 
 Google Sheets is my primary tool for managing a large index fund portfolio spanning multiple accounts at multiple institutions.
 
-An early version of investment spreadsheet is available for feedback as a [free template](https://docs.google.com/spreadsheets/d/186vSKdp0gJEWqmRKm1ezea9mgBACOBJQ_tc5dOl553c/template/preview). This is the first post in a series about the spreadsheet and its development.
+An early version of my investment spreadsheet is available for feedback as a [free template](https://docs.google.com/spreadsheets/d/186vSKdp0gJEWqmRKm1ezea9mgBACOBJQ_tc5dOl553c/template/preview). This is the first post in a series about the spreadsheet and its development.
 
 ::: {.mt-0 .callout-tip appearance="simple"}
 You can subscribe to future posts [via email](/subscribe.html) or [RSS](/index.xml).
