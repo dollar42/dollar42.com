@@ -130,7 +130,7 @@ These rows represent an exchange Alice could consider to rebalance from Bonds an
 
 I used `=115000 / GOOGLEFINANCE("SYMBOL")` to get the rough number of shares for $115,000 of each fund at today's prices. For the sale, I used `-115000`, a negative number.
 
-If Alice actually executed this trade, she would later change the values to the exact share counts when the trade settled.
+If Alice actually executed this transaction, she would later change the values to the exact share counts when the trade settled.
 
 Adding these two transactions causes the Rebalance Matrix to automatically regenerate:
 
@@ -142,7 +142,7 @@ The Difference columns for US Stocks and Nom. Bonds are noticably more green.
 
 Although there is more to do with Int'l Stocks and TIPS, this exchange would help get the portfolio closer to alignment with its new target. If it hadn't or if I spotted a better sequence of transactions, I would quickly delete the two mock transactions and try something else.
 
-Mocking out possible trades all at once has made rebalancing a lot more easy for me. It is much quicker in a spreadsheet than other tools I have tried.
+Mocking out possible transactions all at once has made rebalancing a lot more easy for me. It is much quicker in a spreadsheet than other tools I have tried.
 
 ## Summary
 
