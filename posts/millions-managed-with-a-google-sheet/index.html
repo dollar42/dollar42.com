@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="dcterms.date" content="2025-04-01">
-<meta name="description" content="Google Sheets is the primary tool I use for managing a large index fund portfolio across multiple accounts at multiple institutions.">
+<meta name="description" content="Google Sheets is my primary tool for managing a large index fund portfolio spanning multiple accounts at multiple institutions.">
 
-<title>Millions Managed With A Google Sheet – Dollar42</title>
+<title>Millions Managed with a Google Sheet – Dollar42</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -184,10 +184,10 @@ cookieconsent.run({
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Millions Managed With A Google Sheet</h1>
+      <h1 class="title">Millions Managed with a Google Sheet</h1>
                   <div>
         <div class="description">
-          Google Sheets is the primary tool I use for managing a large index fund portfolio across multiple accounts at multiple institutions.
+          Google Sheets is my primary tool for managing a large index fund portfolio spanning multiple accounts at multiple institutions.
         </div>
       </div>
                 </div>
@@ -232,42 +232,39 @@ cookieconsent.run({
 
 
 
-<p>Google Sheets is the primary tool I use for managing a large index fund portfolio across multiple accounts at multiple institutions.</p>
-<p>My investment spreadsheet is now available as a <a href="https://docs.google.com/spreadsheets/d/186vSKdp0gJEWqmRKm1ezea9mgBACOBJQ_tc5dOl553c/template/preview">free template</a>, and I am writing a series of posts about what it is and why I built it the way I did.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
+<p>Google Sheets is my primary tool for managing a large index fund portfolio spanning multiple accounts at multiple institutions.</p>
+<p>An early version of investment spreadsheet is available for feedback as a <a href="https://docs.google.com/spreadsheets/d/186vSKdp0gJEWqmRKm1ezea9mgBACOBJQ_tc5dOl553c/template/preview">free template</a>. This is the first post in a series about the spreadsheet and its development.</p>
+<div class="mt-0 callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
+<div class="callout-body-container">
 <p>You can subscribe to future posts <a href="../../subscribe.html">via email</a> or <a href="../../index.xml">RSS</a>.</p>
+</div>
 </div>
 </div>
 <section id="the-spreadsheet" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="the-spreadsheet">The Spreadsheet</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="rebalance_matrix.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Rebalance Matrix (explained later) for an example portfolio in the investing spreadsheet"><img src="rebalance_matrix.png" class="img-fluid figure-img" alt="Rebalance Matrix (explained later) for an example portfolio in the investing spreadsheet"></a></p>
-<figcaption>Rebalance Matrix (explained later) for an example portfolio in the investing spreadsheet</figcaption>
+<p><a href="rebalance_matrix.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Rebalance Matrix (explained later) for an example portfolio in the investment spreadsheet"><img src="rebalance_matrix.png" class="img-fluid figure-img" alt="Rebalance Matrix for an example portfolio in the investment spreadsheet"></a></p>
+<figcaption>Rebalance Matrix (explained later) for an example portfolio in the investment spreadsheet</figcaption>
 </figure>
 </div>
-<p>My investment philosophy is simple, but it does require a global view of my portfolio.</p>
+<p>My investment philosophy is simple, but it requires a global view of my portfolio spanning all accounts.</p>
 <p>I use the spreadsheet to answer several important questions:</p>
 <ol type="1">
-<li>What are my investments across <em>all</em> of my (and my spouse’s) accounts? This means IRAs, 401(k)s, HSAs, taxable accounts, etc. All of them!</li>
-<li>What is my actual asset allocation<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> across <em>all</em> of my accounts?</li>
+<li>What comprises my entire portfolio spanning all my accounts? In a simple format, what funds are in my IRA, my spouse’s 401(k), an HSA, a taxable account, etc.?</li>
+<li>What is my actual asset allocation spanning all of my accounts?<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></li>
 <li>How does my actual asset allocation compare to my target (desired) allocation?</li>
 </ol>
-<p>And, of course: How do I fix it when an actual amount strays too far from a target amount?</p>
-<p>The spreadsheet does not need much information. Currently there are input sheets for:</p>
+<p>And how do I fix things if actual and target diverge too far?</p>
+<p>The spreadsheet does not need much information. For Alice and Bob’s example portfolio in this post, I have entered:</p>
 <ul>
 <li>Account names and types.</li>
 <li>Fund symbols and the asset class(es) they represent.</li>
-<li>Holdings/transactions: a fund and the number of shares I own per account (e.g., Roth IRA, 936 shares of VTI<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>).</li>
+<li>Holdings/transactions: a fund and the number of shares owned per account (e.g., Roth IRA, 936 shares of VTI<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>).</li>
 </ul>
 <div>
 
@@ -277,7 +274,7 @@ Tip
 <div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="accounts.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Accounts"><img src="accounts.png" class="img-fluid figure-img" alt="Accounts"></a></p>
+<p><a href="accounts.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Accounts"><img src="accounts.png" class="img-fluid figure-img" alt="Accounts tab in the investment spreadsheet"></a></p>
 <figcaption>Accounts</figcaption>
 </figure>
 </div>
@@ -285,7 +282,7 @@ Tip
 <div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="funds.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Funds"><img src="funds.png" class="img-fluid figure-img" alt="Funds"></a></p>
+<p><a href="funds.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Funds"><img src="funds.png" class="img-fluid figure-img" alt="Funds tab in the investment spreadsheet"></a></p>
 <figcaption>Funds</figcaption>
 </figure>
 </div>
@@ -293,35 +290,35 @@ Tip
 <div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="transactions.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Transactions"><img src="transactions.png" class="img-fluid figure-img" alt="Transactions"></a></p>
+<p><a href="transactions.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Transactions"><img src="transactions.png" class="img-fluid figure-img" alt="Transactions tab in the investment spreadsheet"></a></p>
 <figcaption>Transactions</figcaption>
 </figure>
 </div>
 </div>
 </div>
 </div>
-<p>With the power of the <a href="https://support.google.com/docs/answer/3093281?hl=en"><code>GOOGLEFINANCE</code> function</a>, the spreadsheet automatically produces an Account Holdings report showing accounts, holdings and current values:</p>
+<p>After entering this data, the next tab called Account Holdings generates a report.</p>
+<p>The <code>GOOGLEFINANCE</code> function dynamically recalculates current values as share prices change over time:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="account_holdings.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Account Holdings"><img src="account_holdings.png" class="img-fluid figure-img" alt="Account Holdings"></a></p>
+<p><a href="account_holdings.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Account Holdings"><img src="account_holdings.png" class="img-fluid figure-img" alt="Account Holdings report in the investment spreadsheet"></a></p>
 <figcaption>Account Holdings</figcaption>
 </figure>
 </div>
-<p>I use this report to crosscheck against my online statements. If anything is too different, I probably missed entering a transaction into the spreadsheet.</p>
-<p>Because the <code>GOOGLEFINANCE</code> function is used, current values dynamically recalculate as share prices change over time. If share <em>count</em> changes (e.g., a trade is placed or a dividend is reinvested), a new transaction must be added to the spreadsheet to account for it.</p>
+<p>I use this report to cross-check against my online statements. If anything is too different, I probably missed entering a transaction into the spreadsheet.</p>
 <p>I also print this report to include with my estate plan. It might aid my spouse or executor when they need to inventory accounts when I am incapacitated or die.</p>
 </section>
 <section id="asset-allocation" class="level2">
 <h2 class="anchored" data-anchor-id="asset-allocation">Asset Allocation</h2>
-<p>The next sheet shifts to asset allocation. Asset allocation is <a href="https://www.youtube.com/watch?v=p25PPBgMiEk">one of the most important decisions an investor makes</a>.</p>
-<p>I codify my target asset allocation with variables and formulas that show the thinking behind the ultimately calculated percentages:</p>
+<p>The next tab in the spreadsheet determines target asset allocation. Asset allocation is <a href="https://www.youtube.com/watch?v=p25PPBgMiEk">one of the most important decisions an investor makes</a>.</p>
+<p>In this example, Alice and Bob have used variables and formulas to show the thinking behind the ultimately calculated percentages:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="asset_allocation.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Asset Allocation"><img src="asset_allocation.png" class="img-fluid figure-img" alt="Asset Allocation"></a></p>
+<p><a href="asset_allocation.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Asset Allocation"><img src="asset_allocation.png" class="img-fluid figure-img" alt="Alice and Bob's example asset allocation shown in the investment spreadsheet"></a></p>
 <figcaption>Asset Allocation</figcaption>
 </figure>
 </div>
-<p>In this example portfolio, Alice and Bob create an asset allocation that:</p>
+<p>This asset allocation:</p>
 <ul>
 <li>Reserves $100,000 as a cash buffer off the top.</li>
 <li>Invests the rest 65% in stocks (and 35% in bonds by subtraction).</li>
@@ -334,10 +331,10 @@ Tip
 </section>
 <section id="rebalance-matrix" class="level2">
 <h2 class="anchored" data-anchor-id="rebalance-matrix">Rebalance Matrix</h2>
-<p>With the target asset allocation in place, the spreadsheet automatically produces its second report, the Rebalance Matrix:</p>
+<p>With the target asset allocation in place, the next tab called Rebalance Matrix generates a report.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="rebalance_matrix.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Rebalance Matrix"><img src="rebalance_matrix.png" class="img-fluid figure-img" alt="Rebalance Matrix"></a></p>
+<p><a href="rebalance_matrix.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Rebalance Matrix"><img src="rebalance_matrix.png" class="img-fluid figure-img" alt="Rebalance Matrix in the investment spreadsheet"></a></p>
 <figcaption>Rebalance Matrix</figcaption>
 </figure>
 </div>
@@ -347,21 +344,21 @@ Tip
 <p>In cell C14, $310,500 of VXUS (an international stock fund) is owned in the Roth IRA (Bob) account and is in the Int’l Stocks asset class. Similarly, it is the only fund owned in its account.</p>
 <p>Different funds in the same asset class are “stacked” vertically. Cells B20-B23 show 65% of VT and 100% of VTI allocated to US Stocks within the Brokerage (Joint) account. 35% of VT, its non-US allocation, is shown in cell C20 under the Int’l Stocks asset class. The Brokerage (Joint) account owns several funds.</p>
 <p>Looking back toward the top in rows 4-10, Target (% and $) and Actual show target and actual asset class allocations in percent and dollars, summed by column, representing the allocations <em>summed across all accounts</em>.</p>
-<p>If target and actual deviate too far, the Difference cells will become more yellow and eventually red, indicating that money should ideally start moving from well performing asset classes to relatively underperforming ones (“sell high, buy low!”).</p>
+<p>If target and actual deviate too far, the Difference cells will become more yellow and eventually red, indicating that money should ideally start moving from well-performing asset classes to relatively underperforming ones (“sell high, buy low!”).</p>
 <p>Alice and Bob probably do <em>not</em> need to rebalance in this example. They are within 1 percentage point of their desired asset allocation in every asset class (row 7). The largest deviation is shown in cell D7 and D10 but is small compared to their portfolio.</p>
 <section id="a-different-scenario" class="level3">
 <h3 class="anchored" data-anchor-id="a-different-scenario">A Different Scenario</h3>
 <p>Let’s consider if Alice and Bob decide to increase their stock allocation to 75% (from 65%). In the Asset Allocation sheet:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="stocks_to_75.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="Changing the stock allocation to 75%"><img src="stocks_to_75.png" class="img-fluid figure-img" alt="Changing the stock allocation to 75%"></a></p>
+<p><a href="stocks_to_75.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="Changing the stock allocation to 75%"><img src="stocks_to_75.png" class="img-fluid figure-img" alt="Changing % Stock allocation to 75% in the investment spreadsheet"></a></p>
 <figcaption>Changing the stock allocation to 75%</figcaption>
 </figure>
 </div>
 <p>The Rebalance Matrix sheet automatically regenerates<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="rebalance_matrix_75.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="Rebalance Matrix with 75% target stock allocation"><img src="rebalance_matrix_75.png" class="img-fluid figure-img" alt="Rebalance Matrix with 75% target stock allocation"></a></p>
+<p><a href="rebalance_matrix_75.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="Rebalance Matrix with 75% target stock allocation"><img src="rebalance_matrix_75.png" class="img-fluid figure-img" alt="Rebalance Matrix showing an unbalanced portfolio in the investment spreadsheet"></a></p>
 <figcaption>Rebalance Matrix with 75% target stock allocation</figcaption>
 </figure>
 </div>
@@ -371,7 +368,7 @@ Tip
 <p>For this example, I will show one possible transaction in what might need to be multiple transactions to fully complete the rebalance:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="rebalance_in_action.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10" title="A trial rebalance in the Transactions sheet"><img src="rebalance_in_action.png" class="img-fluid figure-img" alt="A trial rebalance in the Transactions sheet"></a></p>
+<p><a href="rebalance_in_action.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10" title="A trial rebalance in the Transactions sheet"><img src="rebalance_in_action.png" class="img-fluid figure-img" alt="A set of rebalancing transactions in the investment spreadsheet"></a></p>
 <figcaption>A trial rebalance in the Transactions sheet</figcaption>
 </figure>
 </div>
@@ -385,28 +382,46 @@ Tip
 <p>Adding these two transactions causes the Rebalance Matrix to automatically regenerate:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="rebalance_matrix_after_trade.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11" title="Rebalance Matrix after the exchange"><img src="rebalance_matrix_after_trade.png" class="img-fluid figure-img" alt="Rebalance Matrix after the exchange"></a></p>
+<p><a href="rebalance_matrix_after_trade.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11" title="Rebalance Matrix after the exchange"><img src="rebalance_matrix_after_trade.png" class="img-fluid figure-img" alt="Rebalance Matrix after rebalancing showing a more balanced portfolio"></a></p>
 <figcaption>Rebalance Matrix after the exchange</figcaption>
 </figure>
 </div>
 <p>In cells B16-D17, the exchange is shown as $115,000 of newly purchased FSKAX (the stock fund) while FXNAX (the bond fund) shows a balance reduced by $115,000 compared to the prior screenshot.</p>
-<p>The Difference columns for US Stocks and Nom. Bonds are noticably more green.</p>
+<p>The Difference columns for US Stocks and Nom. Bonds are noticeably more green.</p>
 <p>Although there is more to do with Int’l Stocks and TIPS, this exchange would help get the portfolio closer to alignment with its new target. If it hadn’t or if I spotted a better sequence of transactions, I would quickly delete the two mock transactions and try something else.</p>
-<p>Mocking out possible transactions all at once has made rebalancing a lot more easy for me. It is much quicker in a spreadsheet than other tools I have tried.</p>
+<div class="mt-0 callout callout-style-simple callout-tip no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Mocking out possible transactions all at once ahead of time has made rebalancing a lot easier for me. It is much quicker in a spreadsheet than other tools I have tried.</p>
+</div>
+</div>
+</div>
 </section>
 </section>
 <section id="summary" class="level2">
 <h2 class="anchored" data-anchor-id="summary">Summary</h2>
-<p>I am a long-term investor. To me, that requires:</p>
+<p>Google Sheets helps me be a better long-term investor. To me that means:</p>
 <ol type="1">
 <li>Creating an investment plan based on sound reasoning.</li>
 <li>Sticking to the investment plan over many decades.</li>
 <li>Ignoring noise from investors playing a different (short-term) game.</li>
 </ol>
-<p>The spreadsheet is my attempt to give myself useful, actionable information without the noise that most commercial tools spam at me whenever I login.</p>
-<p>A portfolio of millions of dollars can be managed with a spreadsheet when it is constructed from a thoughtful handful of high quality funds in a small set of diversified asset classes. Complex investments or complicated management are not necessarily required even at relatively high balances.</p>
-<p>An early version of the spreadsheet (v0.1) is available as a Google Sheets template here: <a href="https://docs.google.com/spreadsheets/d/186vSKdp0gJEWqmRKm1ezea9mgBACOBJQ_tc5dOl553c/template/preview">Investment Spreadsheet v0.1 (Google Sheets template)</a>.</p>
-<p>And I will write more about it here. Stay tuned!</p>
+<p>The spreadsheet is my attempt to give myself actionable information without the noise that most commercial tools spam at me whenever I login.</p>
+<div class="mt-0 callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>A portfolio of millions of dollars can be managed with a spreadsheet when it is constructed from a thoughtful handful of good funds representing a small set of diversified asset classes. <strong>Complex investments or complicated management are not necessarily required even at relatively high balances.</strong></p>
+</div>
+</div>
+</div>
+<p>An early version of the spreadsheet is available as a Google Sheets template here: <a href="https://docs.google.com/spreadsheets/d/186vSKdp0gJEWqmRKm1ezea9mgBACOBJQ_tc5dOl553c/template/preview">Investment Spreadsheet v0.1 (Google Sheets template)</a>.</p>
+<p>I welcome your feedback. I read every email: <a href="mailto:andy@dollar42.com" class="email">andy@dollar42.com</a></p>
 
 
 </section>
@@ -417,7 +432,7 @@ Tip
 <ol>
 <li id="fn1"><p>For example, what percentage is invested in US stocks relative to other asset classes across <em>all</em> of my accounts?<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn2"><p>VTI and other funds are used as examples only. Any fund supported by GOOGLEFINANCE can be used. Or worst case, the share price can be provided manually for custom funds or assets.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>Treasury Inflation Protected Securities (government bonds with inflation protection in some cases)<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Treasury Inflation Protected Securities: a type of government bond that has some inflation protection features<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn4"><p>Sometimes it does not automatically regenerate, but a value in the orange cell can be changed to force it to recalculate<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
