@@ -146,7 +146,7 @@ Mocking out possible trades all at once has made rebalancing a lot more easy for
 
 ## Summary
 
-I am a long-term investor. That requires:
+I am a long-term investor. To me, that requires:
 
 1. Creating an investment plan based on sound reasoning.
 2. Sticking to the investment plan over many decades.
