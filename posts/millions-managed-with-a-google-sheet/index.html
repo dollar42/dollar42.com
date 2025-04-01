@@ -347,7 +347,7 @@ Tip
 <p>In cell C14, $310,500 of VXUS (an international stock fund) is owned in the Roth IRA (Bob) account and is in the Int’l Stocks asset class. Similarly, it is the only fund owned in its account.</p>
 <p>Different funds in the same asset class are “stacked” vertically. Cells B20-B23 show 65% of VT and 100% of VTI allocated to US Stocks within the Brokerage (Joint) account. 35% of VT, its non-US allocation, is shown in cell C20 under the Int’l Stocks asset class. The Brokerage (Joint) account owns several funds.</p>
 <p>Looking back toward the top in rows 4-10, Target (% and $) and Actual show target and actual asset class allocations in percent and dollars, summed by column, representing the allocations <em>summed across all accounts</em>.</p>
-<p>If target and actual deviate too far, the Difference cells will become more yellow and eventually red, indicating that money should ideally start moving from overperforming asset classes to relatively underperforming ones (“sell high, buy low!”).</p>
+<p>If target and actual deviate too far, the Difference cells will become more yellow and eventually red, indicating that money should ideally start moving from well performing asset classes to relatively underperforming ones (“sell high, buy low!”).</p>
 <p>Alice and Bob probably do <em>not</em> need to rebalance in this example. They are within 1 percentage point of their desired asset allocation in every asset class (row 7). The largest deviation is shown in cell D7 and D10 but is small compared to their portfolio.</p>
 <section id="a-different-scenario" class="level3">
 <h3 class="anchored" data-anchor-id="a-different-scenario">A Different Scenario</h3>
@@ -368,17 +368,17 @@ Tip
 <p>Alice and Bob may now want to start moving money <em>out</em> of bonds and <em>into</em> stocks.</p>
 <p>US stocks are now 5.24 percentage points (cell B7) from target. $114,579 (cell B10) needs to flow from other asset classes into US Stocks to rebalance exactly.</p>
 <p>Rebalancing can be a complicated exercise involving nuanced information such as future financial goals, unrealized gain amounts, fund availability, desire for simplicity, etc.</p>
-<p>For this example, I will go to the Transactions sheet to make two new entries:</p>
+<p>For this example, I will show one possible transaction in what might need to be multiple transactions to fully complete the rebalance:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><a href="rebalance_in_action.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10" title="A trial rebalance in the Transactions sheet"><img src="rebalance_in_action.png" class="img-fluid figure-img" alt="A trial rebalance in the Transactions sheet"></a></p>
 <figcaption>A trial rebalance in the Transactions sheet</figcaption>
 </figure>
 </div>
-<p>These rows represent an exchange Alice could <em>consider</em>:</p>
+<p>These rows represent an exchange Alice could consider to rebalance from Bonds and into US Stocks in her Example Corp 401(k):</p>
 <ol type="1">
-<li>A sale of $115,000 (<em>negative</em>) of FXNAX, a nominal bond fund. $115,000 is my rounded version of the $114,579 inflow (from earlier) needed to rebalance the US Stocks asset class.</li>
-<li>With the proceeds, a purchase of $115,000 (<em>positive</em> shares) of FSKAX, a US stock fund.</li>
+<li>A sale of $115,000 (<em>negative</em> share count) of FXNAX, a fund in the Bonds category that is currently overweight by $133,486 (cell D10).</li>
+<li>With the proceeds, a purchase of $115,000 (<em>positive</em> share count) of FSKAX, a US stock fund. $115,000 is a rounded off version of the current $114,579 inflow (cell B10) needed to reach the target allocation of US Stocks.</li>
 </ol>
 <p>I used <code>=115000 / GOOGLEFINANCE("SYMBOL")</code> to get the rough number of shares for $115,000 of each fund at today’s prices. For the sale, I used <code>-115000</code>, a negative number.</p>
 <p>If Alice actually executed this trade, she would later change the values to the exact share counts when the trade settled.</p>
@@ -391,7 +391,7 @@ Tip
 </div>
 <p>In cells B16-D17, the exchange is shown as $115,000 of newly purchased FSKAX (the stock fund) while FXNAX (the bond fund) shows a balance reduced by $115,000 compared to the prior screenshot.</p>
 <p>The Difference columns for US Stocks and Nom. Bonds are noticably more green.</p>
-<p>Although there is more to do, this exchange would help get the portfolio closer to alignment with its new target. If it hadn’t, I would quickly delete the two mock transactions and try something else.</p>
+<p>Although there is more to do with Int’l Stocks and TIPS, this exchange would help get the portfolio closer to alignment with its new target. If it hadn’t or if I spotted a better sequence of transactions, I would quickly delete the two mock transactions and try something else.</p>
 <p>Mocking out possible trades all at once has made rebalancing a lot more easy for me. It is much quicker in a spreadsheet than other tools I have tried.</p>
 </section>
 </section>
