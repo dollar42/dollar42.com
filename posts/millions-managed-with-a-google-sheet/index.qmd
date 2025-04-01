@@ -154,7 +154,7 @@ I am a long-term investor. To me, that requires:
 
 The spreadsheet is my attempt to give myself useful, actionable information without the noise that most commercial tools spam at me whenever I login.
 
-A portfolio of millions of dollars can be managed with a spreadsheet when it is constructed from a thoughtful handful of high quality, low fee funds in a small set of diversified asset classes. Complex investments or complicated management are not necessarily required even at relatively high balances.
+A portfolio of millions of dollars can be managed with a spreadsheet when it is constructed from a thoughtful handful of high quality funds in a small set of diversified asset classes. Complex investments or complicated management are not necessarily required even at relatively high balances.
 
 An early version of the spreadsheet (v0.1) is available as a Google Sheets template here: [Investment Spreadsheet v0.1 (Google Sheets template)](https://docs.google.com/spreadsheets/d/186vSKdp0gJEWqmRKm1ezea9mgBACOBJQ_tc5dOl553c/template/preview).
 
