@@ -24,13 +24,13 @@ You can subscribe to future posts [via email](/subscribe.html) or [RSS](/index.x
 
 ## The Spreadsheet
 
-![Rebalance Matrix (explained later) for an example portfolio in the investment spreadsheet](rebalance_matrix.png){fig-alt="Rebalance Matrix for an example portfolio in the investment spreadsheet"}
+![Rebalance Matrix (explained later) for Alice and Bob's example portfolio in the investment spreadsheet](rebalance_matrix.png){fig-alt="Rebalance Matrix for Alice and Bob's example portfolio in the investment spreadsheet"}
 
 My investment philosophy is simple, but it requires a global view of my portfolio spanning all accounts.
 
 I use the spreadsheet to answer several important questions:
 
-1. What comprises my entire portfolio spanning all of my accounts? In a simple format, what funds are in my IRA, my spouse's 401(k), our HSA, a taxable account, etc.?
+1. What funds comprise my entire portfolio spanning all of my accounts? In a simple format, what funds are in my IRA, my spouse's 401(k), our HSA, a taxable account, etc.?
 1. What is my actual asset allocation spanning all of my accounts?^[For example, what percentage is invested in US stocks relative to other asset classes across _all_ of my accounts?]
 1. How does my actual asset allocation compare to my target (desired) allocation?
 
@@ -50,9 +50,9 @@ The spreadsheet does not need much information. For Alice and Bob's example port
 ![Transactions](transactions.png){fig-alt="Transactions tab in the investment spreadsheet"}
 :::
 
-With this data filled in, the next tab called Account Holdings generates a report.
+With this data filled in, the next tab called Account Holdings automatically generates a report.
 
-The spreadsheet uses the `GOOGLEFINANCE` function to dynamically recalculate current values as share prices change over time:
+The spreadsheet uses the [`GOOGLEFINANCE` function](https://support.google.com/docs/answer/3093281) to dynamically recalculate current values as share prices change over time:
 
 ![Account Holdings](account_holdings.png){fig-alt="Account Holdings report in the investment spreadsheet"}
 
