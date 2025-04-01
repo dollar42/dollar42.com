@@ -50,9 +50,9 @@ The spreadsheet does not need much information. For Alice and Bob's example port
 ![Transactions](transactions.png){fig-alt="Transactions tab in the investment spreadsheet"}
 :::
 
-After entering this data, the next tab called Account Holdings generates a report.
+With this data filled in, the next tab called Account Holdings generates a report.
 
-The `GOOGLEFINANCE` function dynamically recalculates current values as share prices change over time:
+The spreadsheet uses the `GOOGLEFINANCE` function to dynamically recalculate current values as share prices change over time:
 
 ![Account Holdings](account_holdings.png){fig-alt="Account Holdings report in the investment spreadsheet"}
 
