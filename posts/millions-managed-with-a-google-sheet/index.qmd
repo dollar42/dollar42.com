@@ -30,7 +30,7 @@ My investment philosophy is simple, but it requires a global view of my portfoli
 
 I use the spreadsheet to answer several important questions:
 
-1. What comprises my entire portfolio spanning all my accounts? In a simple format, what funds are in my IRA, my spouse's 401(k), an HSA, a taxable account, etc.?
+1. What comprises my entire portfolio spanning all of my accounts? In a simple format, what funds are in my IRA, my spouse's 401(k), our HSA, a taxable account, etc.?
 1. What is my actual asset allocation spanning all of my accounts?^[For example, what percentage is invested in US stocks relative to other asset classes across _all_ of my accounts?]
 1. How does my actual asset allocation compare to my target (desired) allocation?
 
