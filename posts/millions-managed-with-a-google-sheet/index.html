@@ -377,8 +377,8 @@ Tip
 </div>
 <p>These rows represent an exchange Alice could consider to rebalance from Bonds and into US Stocks in her Example Corp 401(k):</p>
 <ol type="1">
-<li>A sale of $115,000 (<em>negative</em> share count) of FXNAX, a fund in the Bonds category that is currently overweight by $133,486 (cell D10).</li>
-<li>With the proceeds, a purchase of $115,000 (<em>positive</em> share count) of FSKAX, a US stock fund. $115,000 is a rounded off version of the current $114,579 inflow (cell B10) needed to reach the target allocation of US Stocks.</li>
+<li>A sale (negative shares) of $115,000 of FXNAX, a fund in the Bonds category that is currently overweight by $133,486 (cell D10).</li>
+<li>With the proceeds, a purchase (positive shares) of $115,000 of FSKAX, a US stock fund. $115,000 is a rounded off version of the current $114,579 inflow (cell B10) needed to reach the target allocation of US Stocks.</li>
 </ol>
 <p>I used <code>=115000 / GOOGLEFINANCE("SYMBOL")</code> to get the rough number of shares for $115,000 of each fund at today’s prices. For the sale, I used <code>-115000</code>, a negative number.</p>
 <p>If Alice actually executed this trade, she would later change the values to the exact share counts when the trade settled.</p>
