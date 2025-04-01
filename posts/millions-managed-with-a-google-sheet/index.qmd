@@ -4,7 +4,6 @@ title: "Millions Managed with a Google Sheet"
 description: "Google Sheets is my primary tool for managing a large index fund portfolio spanning multiple accounts at several institutions."
 date: "2025-04-02"
 image: "rebalance_matrix.png"
-draft: true
 lightbox: true
 format:
   html:
