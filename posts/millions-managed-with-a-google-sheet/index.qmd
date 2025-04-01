@@ -121,7 +121,7 @@ For example, US stocks are now 5.24 percentage points (cell B7) from target. $11
 
 Rebalancing can be a complicated exercise involving personalized circumstances and tax considerations. The spreadsheet lets me quickly experiment with several ideas before executing any trades.
 
-For this example, I will show one possible transaction in what might need to be multiple transactions to fully complete the rebalance:
+For this example, I will show one possible transaction in what might need to be multiple to fully complete the rebalance:
 
 ![A trial rebalance in the Transactions sheet](rebalance_in_action.png){fig-alt="A set of rebalancing transactions in the investment spreadsheet"}
 
@@ -145,21 +145,21 @@ The Difference columns for US Stocks and Nom. Bonds are noticeably more green.
 Although there is more to do with Int'l Stocks and TIPS, this exchange would help get the portfolio closer to alignment with its new target. If it hadn't or if I spotted a better sequence of transactions, I would quickly delete the two mock transactions and try something else.
 
 ::: {.mt-0 .callout-tip appearance="minimal"}
-Mocking out possible transactions all at once ahead of time has made rebalancing a lot easier for me. It is much quicker in a spreadsheet than other tools I have tried.
+**Mocking out possible transactions all at once ahead of time has made rebalancing a lot easier for me. It is much quicker in a spreadsheet than other tools I have tried.**
 :::
 
 ## Summary
 
 Google Sheets helps me be a better long-term investor. To me that means:
 
-1. Creating an investment plan based on sound reasoning.
-2. Sticking to the investment plan over many decades.
-3. Ignoring noise from investors playing a different (short-term) game.
+1. Creating an simple investment plan based on sensible principles.
+2. Sticking to the plan over many decades.
+3. Ignoring noise from investors playing a different (short-term or irrational) game.
 
 The spreadsheet is my attempt to give myself actionable information without the noise that most commercial tools spam at me whenever I login.
 
 ::: {.mt-0 .callout-note appearance="minimal"}
-A portfolio of millions of dollars can be managed with a spreadsheet when it is constructed from a thoughtful handful of good funds representing a small set of diversified asset classes. **Complex investments or complicated management are not necessarily required even at relatively high balances.**
+A portfolio of millions of dollars can be managed with a spreadsheet when it is constructed from a thoughtful handful of good funds representing a small set of diversified asset classes. **Complex investment products or complicated management strategies are not necessarily required even at relatively high balances.**
 :::
 
 An early version of the spreadsheet is available as a Google Sheets template here: [Investment Spreadsheet v0.1 (Google Sheets template)](https://docs.google.com/spreadsheets/d/186vSKdp0gJEWqmRKm1ezea9mgBACOBJQ_tc5dOl553c/template/preview).
