@@ -259,7 +259,7 @@ cookieconsent.run({
 <li>What is my actual asset allocation spanning all of my accounts?<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></li>
 <li>How does my actual asset allocation compare to my target (desired) allocation?</li>
 </ol>
-<p>And how do I fix things if actual and target diverge too far?</p>
+<p>And how do I fix things if actual diverges too much from target?</p>
 <p>The spreadsheet does not need much information. For Alice and Bob’s example portfolio in this post, I have entered:</p>
 <ul>
 <li>Account names and types.</li>
@@ -311,23 +311,23 @@ cookieconsent.run({
 <section id="asset-allocation" class="level2">
 <h2 class="anchored" data-anchor-id="asset-allocation">Asset Allocation</h2>
 <p>The next tab in the spreadsheet determines target asset allocation. Asset allocation is <a href="https://www.youtube.com/watch?v=p25PPBgMiEk">one of the most important decisions an investor makes</a>.</p>
-<p>In this example, Alice and Bob have used variables and formulas to show the thinking behind the ultimately calculated percentages:</p>
+<p>In this example, Alice and Bob have used formulas to show the thinking behind the ultimately calculated percentages:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><a href="asset_allocation.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Asset Allocation"><img src="asset_allocation.png" class="img-fluid figure-img" alt="Alice and Bob's example asset allocation shown in the investment spreadsheet"></a></p>
 <figcaption>Asset Allocation</figcaption>
 </figure>
 </div>
-<p>This asset allocation:</p>
+<p>Their example asset allocation:</p>
 <ul>
 <li>Reserves $100,000 as a cash buffer off the top.</li>
-<li>Invests the rest 65% in stocks (and 35% in bonds by subtraction).</li>
+<li>Invests the rest in 65% stocks (and 35% in bonds by subtraction).</li>
 <li>Invests 60% <em>of the stock allocation</em> in US stocks (and 40% in non-US stocks by subtraction).</li>
-<li>Invests 30% <em>of the bond allocation</em> in TIPS<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> (and 70% in nominal/nom. bonds by subtraction).</li>
+<li>Invests 30% <em>of the bond allocation</em> in TIPS<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> (and 70% in nominal<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>/nom. bonds by subtraction).</li>
 </ul>
 <p>In cell B9-C9, $100,000 is automatically calculated as 4.57% of their roughly $2.2 million portfolio. The allocations to all other asset classes are also automatically adjusted downward slightly to account for the cash buffer.</p>
 <p>A cash buffer is optional, but I find it important to support in a simple way.</p>
-<p>The variable names and values on the right are both editable. In other experiments, I have replaced them with an entirely different set as a way to mock out and explore different portfolio constructions.</p>
+<p>The variable names and values on the right are both editable. In other experiments, I have replaced them with an entirely different set as a way to explore different portfolio constructions.</p>
 </section>
 <section id="rebalance-matrix" class="level2">
 <h2 class="anchored" data-anchor-id="rebalance-matrix">Rebalance Matrix</h2>
@@ -344,27 +344,28 @@ cookieconsent.run({
 <p>In cell C14, $310,500 of VXUS (an international stock fund) is owned in the Roth IRA (Bob) account and is in the Int’l Stocks asset class. Similarly, it is the only fund owned in its account.</p>
 <p>Different funds in the same asset class are “stacked” vertically. Cells B20-B23 show 65% of VT and 100% of VTI allocated to US Stocks within the Brokerage (Joint) account. 35% of VT, its non-US allocation, is shown in cell C20 under the Int’l Stocks asset class. The Brokerage (Joint) account owns several funds.</p>
 <p>Looking back toward the top in rows 4-10, Target (% and $) and Actual show target and actual asset class allocations in percent and dollars, summed by column, representing the allocations <em>summed across all accounts</em>.</p>
-<p>If target and actual deviate too far, the Difference cells will become more yellow and eventually red, indicating that money should ideally start moving from well-performing asset classes to relatively underperforming ones (“sell high, buy low!”).</p>
+<p>If target and actual deviate too far, the Difference cells will automatically become more red, indicating that money should ideally start moving from well-performing asset classes to relatively underperforming ones (“sell high, buy low!”).</p>
 <p>Alice and Bob probably do <em>not</em> need to rebalance in this example. They are within 1 percentage point of their desired asset allocation in every asset class (row 7). The largest deviation is shown in cell D7 and D10 but is small compared to their portfolio.</p>
 <section id="a-different-scenario" class="level3">
 <h3 class="anchored" data-anchor-id="a-different-scenario">A Different Scenario</h3>
-<p>Let’s consider if Alice and Bob decide to increase their stock allocation to 75% (from 65%). In the Asset Allocation sheet:</p>
+<p>What if Alice and Bob experiment with raising their stock allocation to 75% (from 65%)? In the Asset Allocation sheet:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><a href="stocks_to_75.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="Changing the stock allocation to 75%"><img src="stocks_to_75.png" class="img-fluid figure-img" alt="Changing % Stock allocation to 75% in the investment spreadsheet"></a></p>
 <figcaption>Changing the stock allocation to 75%</figcaption>
 </figure>
 </div>
-<p>The Rebalance Matrix sheet automatically regenerates<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>:</p>
+<p>The Rebalance Matrix sheet automatically regenerates<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a>:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><a href="rebalance_matrix_75.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="Rebalance Matrix with 75% target stock allocation"><img src="rebalance_matrix_75.png" class="img-fluid figure-img" alt="Rebalance Matrix showing an unbalanced portfolio in the investment spreadsheet"></a></p>
 <figcaption>Rebalance Matrix with 75% target stock allocation</figcaption>
 </figure>
 </div>
-<p>Alice and Bob may now want to start moving money <em>out</em> of bonds and <em>into</em> stocks.</p>
-<p>US stocks are now 5.24 percentage points (cell B7) from target. $114,579 (cell B10) needs to flow from other asset classes into US Stocks to rebalance exactly.</p>
-<p>Rebalancing can be a complicated exercise involving nuanced information such as future financial goals, unrealized gain amounts, fund availability, desire for simplicity, etc.</p>
+<p>The story here is much more, er, <em>red</em>.</p>
+<p>As expected, Alice and Bob would need to start moving money out of Nom. Bonds and TIPS and into US Stocks and Int’l Stocks.</p>
+<p>For example, US stocks are now 5.24 percentage points (cell B7) from target. $114,579 (cell B10) needs to flow from other asset classes into US Stocks to rebalance exactly.</p>
+<p>Rebalancing can be a complicated exercise involving personalized circumstances and tax considerations. The spreadsheet lets me quickly experiment with several ideas before executing any trades.</p>
 <p>For this example, I will show one possible transaction in what might need to be multiple transactions to fully complete the rebalance:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -372,9 +373,9 @@ cookieconsent.run({
 <figcaption>A trial rebalance in the Transactions sheet</figcaption>
 </figure>
 </div>
-<p>These rows represent an exchange Alice could consider to rebalance from Bonds and into US Stocks in her Example Corp 401(k):</p>
+<p>These rows represent an exchange Alice could consider to rebalance from Nom. Bonds and into US Stocks in her Example Corp 401(k):</p>
 <ol type="1">
-<li>A sale (negative shares) of $115,000 of FXNAX, a fund in the Bonds category that is currently overweight by $133,486 (cell D10).</li>
+<li>A sale (negative shares) of $115,000 of FXNAX, a fund in the Nom. Bonds category that is currently overweight by $133,486 (cell D10).</li>
 <li>With the proceeds, a purchase (positive shares) of $115,000 of FSKAX, a US stock fund. $115,000 is a rounded off version of the current $114,579 inflow (cell B10) needed to reach the target allocation of US Stocks.</li>
 </ol>
 <p>I used <code>=115000 / GOOGLEFINANCE("SYMBOL")</code> to get the rough number of shares for $115,000 of each fund at today’s prices. For the sale, I used <code>-115000</code>, a negative number.</p>
@@ -433,7 +434,8 @@ cookieconsent.run({
 <li id="fn1"><p>For example, what percentage is invested in US stocks relative to other asset classes across <em>all</em> of my accounts?<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn2"><p>VTI and other funds are used as examples only. Any fund supported by GOOGLEFINANCE can be used. Or worst case, the share price can be provided manually for custom funds or assets.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn3"><p>Treasury Inflation Protected Securities: a type of government bond that has some inflation protection features<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4"><p>Sometimes it does not automatically regenerate, but a value in the orange cell can be changed to force it to recalculate<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Nominal bonds are not automatically adjusted for inflation. For this example portfolio, nominal bonds mean US bonds <em>excluding</em> TIPS.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>Sometimes it does not automatically regenerate, but a value in the orange cell B2 can be changed to force it to recalculate<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
