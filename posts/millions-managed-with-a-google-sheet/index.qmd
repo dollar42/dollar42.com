@@ -34,7 +34,7 @@ I use the spreadsheet to answer several important questions:
 1. What is my actual asset allocation spanning all of my accounts?^[For example, what percentage is invested in US stocks relative to other asset classes across _all_ of my accounts?]
 1. How does my actual asset allocation compare to my target (desired) allocation?
 
-And how do I fix things if actual and target diverge too far?
+And how do I fix things if actual diverges too much from target?
 
 The spreadsheet does not need much information. For Alice and Bob's example portfolio in this post, I have entered:
 
@@ -64,22 +64,22 @@ I also print this report to include with my estate plan. It might aid my spouse 
 
 The next tab in the spreadsheet determines target asset allocation. Asset allocation is [one of the most important decisions an investor makes](https://www.youtube.com/watch?v=p25PPBgMiEk).
 
-In this example, Alice and Bob have used variables and formulas to show the thinking behind the ultimately calculated percentages:
+In this example, Alice and Bob have used formulas to show the thinking behind the ultimately calculated percentages:
 
 ![Asset Allocation](asset_allocation.png){fig-alt="Alice and Bob's example asset allocation shown in the investment spreadsheet"}
 
-This asset allocation:
+Their example asset allocation:
 
 - Reserves $100,000 as a cash buffer off the top.
-- Invests the rest 65% in stocks (and 35% in bonds by subtraction).
+- Invests the rest in 65% stocks (and 35% in bonds by subtraction).
 - Invests 60% _of the stock allocation_ in US stocks (and 40% in non-US stocks by subtraction).
-- Invests 30% _of the bond allocation_ in TIPS^[Treasury Inflation Protected Securities: a type of government bond that has some inflation protection features] (and 70% in nominal/nom. bonds by subtraction).
+- Invests 30% _of the bond allocation_ in TIPS^[Treasury Inflation Protected Securities: a type of government bond that has some inflation protection features] (and 70% in nominal^[Nominal bonds are not automatically adjusted for inflation. For this example portfolio, nominal bonds mean US bonds _excluding_ TIPS.]/nom. bonds by subtraction).
 
 In cell B9-C9, $100,000 is automatically calculated as 4.57% of their roughly $2.2 million portfolio. The allocations to all other asset classes are also automatically adjusted downward slightly to account for the cash buffer.
 
 A cash buffer is optional, but I find it important to support in a simple way.
 
-The variable names and values on the right are both editable. In other experiments, I have replaced them with an entirely different set as a way to mock out and explore different portfolio constructions.
+The variable names and values on the right are both editable. In other experiments, I have replaced them with an entirely different set as a way to explore different portfolio constructions.
 
 ## Rebalance Matrix
 
@@ -99,33 +99,35 @@ Different funds in the same asset class are "stacked" vertically. Cells B20-B23 
 
 Looking back toward the top in rows 4-10, Target (% and \$) and Actual show target and actual asset class allocations in percent and dollars, summed by column, representing the allocations _summed across all accounts_.
 
-If target and actual deviate too far, the Difference cells will become more yellow and eventually red, indicating that money should ideally start moving from well-performing asset classes to relatively underperforming ones ("sell high, buy low!").
+If target and actual deviate too far, the Difference cells will automatically become more red, indicating that money should ideally start moving from well-performing asset classes to relatively underperforming ones ("sell high, buy low!").
 
 Alice and Bob probably do _not_ need to rebalance in this example. They are within 1 percentage point of their desired asset allocation in every asset class (row 7). The largest deviation is shown in cell D7 and D10 but is small compared to their portfolio.
 
 ### A Different Scenario
 
-Let's consider if Alice and Bob decide to increase their stock allocation to 75% (from 65%). In the Asset Allocation sheet:
+What if Alice and Bob experiment with raising their stock allocation to 75% (from 65%)? In the Asset Allocation sheet:
 
 ![Changing the stock allocation to 75%](stocks_to_75.png){fig-alt="Changing % Stock allocation to 75% in the investment spreadsheet"}
 
-The Rebalance Matrix sheet automatically regenerates^[Sometimes it does not automatically regenerate, but a value in the orange cell can be changed to force it to recalculate]:
+The Rebalance Matrix sheet automatically regenerates^[Sometimes it does not automatically regenerate, but a value in the orange cell B2 can be changed to force it to recalculate]:
 
 ![Rebalance Matrix with 75% target stock allocation](rebalance_matrix_75.png){fig-alt="Rebalance Matrix showing an unbalanced portfolio in the investment spreadsheet"}
 
-Alice and Bob may now want to start moving money _out_ of bonds and _into_ stocks.
+The story here is much more, er, _red_.
 
-US stocks are now 5.24 percentage points (cell B7) from target. $114,579 (cell B10) needs to flow from other asset classes into US Stocks to rebalance exactly.
+As expected, Alice and Bob would need to start moving money out of Nom. Bonds and TIPS and into US Stocks and Int'l Stocks.
 
-Rebalancing can be a complicated exercise involving nuanced information such as future financial goals, unrealized gain amounts, fund availability, desire for simplicity, etc.
+For example, US stocks are now 5.24 percentage points (cell B7) from target. $114,579 (cell B10) needs to flow from other asset classes into US Stocks to rebalance exactly.
+
+Rebalancing can be a complicated exercise involving personalized circumstances and tax considerations. The spreadsheet lets me quickly experiment with several ideas before executing any trades.
 
 For this example, I will show one possible transaction in what might need to be multiple transactions to fully complete the rebalance:
 
 ![A trial rebalance in the Transactions sheet](rebalance_in_action.png){fig-alt="A set of rebalancing transactions in the investment spreadsheet"}
 
-These rows represent an exchange Alice could consider to rebalance from Bonds and into US Stocks in her Example Corp 401(k):
+These rows represent an exchange Alice could consider to rebalance from Nom. Bonds and into US Stocks in her Example Corp 401(k):
 
-1. A sale (negative shares) of $115,000 of FXNAX, a fund in the Bonds category that is currently overweight by $133,486 (cell D10).
+1. A sale (negative shares) of $115,000 of FXNAX, a fund in the Nom. Bonds category that is currently overweight by $133,486 (cell D10).
 1. With the proceeds, a purchase (positive shares) of $115,000 of FSKAX, a US stock fund. $115,000 is a rounded off version of the current $114,579 inflow (cell B10) needed to reach the target allocation of US Stocks.
 
 I used `=115000 / GOOGLEFINANCE("SYMBOL")` to get the rough number of shares for $115,000 of each fund at today's prices. For the sale, I used `-115000`, a negative number.
