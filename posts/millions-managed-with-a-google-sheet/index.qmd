@@ -56,7 +56,7 @@ The spreadsheet uses the [`GOOGLEFINANCE` function](https://support.google.com/d
 
 ![Account Holdings](account_holdings.png){fig-alt="Account Holdings report in the investment spreadsheet"}
 
-I use this report to cross-check against my online statements. If anything is too different, I probably missed entering a transaction into the spreadsheet.
+I use this report to cross-check against my online statements. If any value is too different, I probably missed entering a transaction into the spreadsheet.
 
 I also print this report to include with my estate plan. It might aid my spouse or executor when they need to inventory accounts when I am incapacitated or die.
 
