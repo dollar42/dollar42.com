@@ -12,14 +12,16 @@ about:
   links:
     - icon: person-video
       href: https://cal.com/dollar42/intro
-      text: "Schedule an Intro Call"
+      text: "Schedule a Chat"
 ---
 
-Dollar42 is a blog evangelizing simple and sensible financial and tax decision making. It is a product of Dollar 42, LLC.
+Dollar42 is a blog evangelizing simple and sensible financial and tax decision-making. It is a product of Dollar 42, LLC.
 
 [<i class="bi bi-linkedin"></i> Andy Lindeman, EA](https://www.linkedin.com/in/andylindeman/) is the editor of the blog. Andy is licensed as an [enrolled agent](https://www.irs.gov/tax-professionals/enrolled-agents/enrolled-agent-information) by the IRS.
 
-Andy has experience with U.S. personal income tax, stock compensation, retirement accounts, investment taxation and certain small business issues. **Dollar 42, LLC does not offer tax return preparation or investment advice.**
+Andy has experience with U.S. personal income tax, stock compensation, retirement accounts, investment taxation and certain small business issues.
+
+Dollar 42, LLC does not currently offer tax return preparation services or investment advice.
 
 <!-- If you think we may be able to help, [schedule an intro call](https://cal.com/dollar42/intro). -->
 
