@@ -105,7 +105,9 @@ Alice and Bob probably do _not_ need to rebalance in this example. They are with
 
 ### A Different Scenario
 
-What if Alice and Bob experiment with raising their stock allocation to 75% (from 65%)? In the Asset Allocation sheet:
+If I were Alice and Bob, I would open the spreadsheet every few months to update transactions and check for growing deviations. Close monitoring would not be required.
+
+But what if Alice and Bob want to experiment with raising their stock allocation to 75% (from 65%)? In the Asset Allocation sheet:
 
 ![Changing the stock allocation to 75%](stocks_to_75.png){fig-alt="Changing % Stock allocation to 75% in the investment spreadsheet"}
 
