@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="dcterms.date" content="2025-04-01">
-<meta name="description" content="Google Sheets is the primary tool I use for managing a large, long-term index fund portfolio across multiple account types and multiple institutions.">
+<meta name="description" content="Google Sheets is the primary tool I use for managing a large, long-term index fund portfolio across multiple accounts at multiple institutions.">
 
 <title>Millions Managed With A Google Sheet – Dollar42</title>
 <style>
@@ -182,7 +182,7 @@ cookieconsent.run({
       <h1 class="title">Millions Managed With A Google Sheet</h1>
                   <div>
         <div class="description">
-          Google Sheets is the primary tool I use for managing a large, long-term index fund portfolio across multiple account types and multiple institutions.
+          Google Sheets is the primary tool I use for managing a large, long-term index fund portfolio across multiple accounts at multiple institutions.
         </div>
       </div>
                 </div>
@@ -227,8 +227,8 @@ cookieconsent.run({
 
 
 
-<p>Google Sheets is the primary tool I use for managing a large, long-term index fund portfolio across multiple account types and multiple institutions.</p>
-<p>My investment spreadsheet is now available as a free template, and I am writing a series of posts on what it is and why I built it.</p>
+<p>Google Sheets is the primary tool I use for managing a large index fund portfolio across multiple accounts at multiple institutions.</p>
+<p>My investment spreadsheet is now available as a free template, and I am writing a series of posts on what it is and why I built it like I did.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -257,12 +257,12 @@ Tip
 <li>What is my actual asset allocation<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> across <em>all</em> of my accounts?</li>
 <li>How does my actual asset allocation compare to my target (desired) allocation?</li>
 </ol>
-<p>And, of course: How do I fix it if actuals are too far from targets?</p>
+<p>And, of course: How do I fix it when an actual amount strays too far from a target amount?</p>
 <p>The spreadsheet does not need much information. Currently there are input sheets for:</p>
 <ul>
 <li>Account names and types.</li>
 <li>Fund symbols and the asset class(es) they represent.</li>
-<li>Holdings/transactions: a fund and the number of shares I own per account (e.g., FUND1, 42 shares in my Roth IRA).</li>
+<li>Holdings/transactions: a fund and the number of shares I own per account (e.g., Roth IRA, 936 shares of VTI<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>).</li>
 </ul>
 <div>
 
@@ -295,7 +295,7 @@ Tip
 </div>
 </div>
 </div>
-<p>With the power of the <a href="https://support.google.com/docs/answer/3093281?hl=en"><code>GOOGLEFINANCE</code> function</a>, the spreadsheet automatically produces an Account Holdings report showing accounts, holdings and balances:</p>
+<p>With the power of the <a href="https://support.google.com/docs/answer/3093281?hl=en"><code>GOOGLEFINANCE</code> function</a>, the spreadsheet automatically produces an Account Holdings report showing accounts, holdings and current values:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><a href="account_holdings.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Account Holdings"><img src="account_holdings.png" class="img-fluid figure-img" alt="Account Holdings"></a></p>
@@ -303,11 +303,12 @@ Tip
 </figure>
 </div>
 <p>I use this report to crosscheck against my online statements. If anything is too different, I probably missed entering a transaction into the spreadsheet.</p>
-<p>I also print this report to include with my estate plan. I hope it will aid my spouse or executor when they need to inventory accounts if I am incapacitated or die.</p>
+<p>Because the <code>GOOGLEFINANCE</code> function is used, current values in dollars dynamically recalculate as share prices change over time. If share count changes (e.g., a trade is placed or a dividend is automatically reinvested), a new transaction must be added to the spreadsheet to account for it.</p>
+<p>I also print this report to include with my estate plan. It might aid my spouse or executor when they need to inventory accounts when I am incapacitated or die.</p>
 </section>
 <section id="asset-allocation" class="level2">
 <h2 class="anchored" data-anchor-id="asset-allocation">Asset Allocation</h2>
-<p>The next sheet shifts to asset allocation<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>. Asset allocation is <a href="https://www.youtube.com/watch?v=p25PPBgMiEk">one of the most important decisions an investor makes</a>.</p>
+<p>The next sheet shifts to asset allocation<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>. Asset allocation is <a href="https://www.youtube.com/watch?v=p25PPBgMiEk">one of the most important decisions an investor makes</a>.</p>
 <p>I codify my target asset allocation with variables and formulas that show the thinking behind the ultimately calculated percentages:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -320,10 +321,11 @@ Tip
 <li>Reserves $100,000 as a cash buffer off the top.</li>
 <li>Invests the rest 65% in stocks (and 35% in bonds by subtraction).</li>
 <li>Invests 60% <em>of the stock allocation</em> in US stocks (and 40% in non-US stocks by subtraction).</li>
-<li>Invests 30% <em>of the bond allocation</em> in TIPS<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> (and 70% in nominal/nom. bonds by subtraction).</li>
+<li>Invests 30% <em>of the bond allocation</em> in TIPS<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> (and 70% in nominal/nom. bonds by subtraction).</li>
 </ul>
-<p>In cell C8-C9, $100,000 is automatically calculated as 4.57% of their roughly $2.2 million portfolio. In the other cells in column C, the allocations to all other asset classes are also automatically adjusted downward to compensate for the cash buffer.</p>
-<p>The variables on the right are entirely editable. In other experiments with the spreadsheet, I have changed them to be completely different.</p>
+<p>In cell B9-C9, $100,000 is automatically calculated as 4.57% of their roughly $2.2 million portfolio. The allocations to all other asset classes are also automatically adjusted downward slightly to account for the cash buffer.</p>
+<p>A cash buffer is optional, but I find it important to support in a simple way.</p>
+<p>The variable names and values on the right are both editable. In other experiments, I have replaced them with an entirely different set as a way to mock out and explore different portfolio constructions.</p>
 </section>
 <section id="rebalance-matrix" class="level2">
 <h2 class="anchored" data-anchor-id="rebalance-matrix">Rebalance Matrix</h2>
@@ -334,14 +336,14 @@ Tip
 <figcaption>Rebalance Matrix</figcaption>
 </figure>
 </div>
-<p>This report places accounts on the left and asset classes across the top.</p>
+<p>This report places accounts vertically on the left and asset classes horizontally across the top.</p>
 <p>Each cell in the inner matrix pairs a fund with account and asset class.</p>
-<p>For example, VTI (a US stock fund) in cell B12 is owned in the Roth IRA (Alice) account and is in the US Stocks asset class.</p>
-<p>VXUS (an international stock fund) in cell C14 is owned in the Roth IRA (Bob) account and is in the Int’l stocks asset class.</p>
-<p>Different funds in the same asset class are “stacked” vertically. Cells B20-B23 show 65% of VT and 100% of VTI allocated to US Stocks within the Brokerage (Joint) account. 35% of VT, its non-US allocation, is shown in cell C20 under the Int’l Stocks asset class.</p>
-<p>Looking back at the top in rows 4-10, Target ($ and %) and Actual show target and actual allocations for each asset class summed by column, representing the allocations <em>summed across all accounts</em>.</p>
-<p>If target and actual deviate too far, the Difference cells will become more yellow and eventually red, indicating that money should ideally move from the overperforming asset class to the underperforming one (“sell high, buy low”).</p>
-<p>Alice and Bob probably do <em>not</em> need to rebalance in this example! They are within 1.00 percentage points of their desired asset allocation in every asset class (row 7). The largest deviation is shown in cell D7 and D10 but is small compared to their portfolio.</p>
+<p>In cell B12, $257,250 of VTI (a US stock fund) is owned in the Roth IRA (Alice) account and is in the US Stocks asset class. It is the only fund owned in that account.</p>
+<p>In cell C14, $310,500 of VXUS (an international stock fund) is owned in the Roth IRA (Bob) account and is in the Int’l Stocks asset class. Similarly, it is the only fund owned in its account.</p>
+<p>Different funds in the same asset class are “stacked” vertically. Cells B20-B23 show 65% of VT and 100% of VTI allocated to US Stocks within the Brokerage (Joint) account. 35% of VT, its non-US allocation, is shown in cell C20 under the Int’l Stocks asset class. The Brokerage (Joint) account owns several funds.</p>
+<p>Looking back toward the top in rows 4-10, Target (% and $) and Actual show target and actual asset class allocations in percent and dollars, summed by column, representing the allocations <em>summed across all accounts</em>.</p>
+<p>If target and actual deviate too far, the Difference cells will become more yellow and eventually red, indicating that money should ideally start moving from overperforming asset classes to relatively underperforming ones (“sell high, buy low!”).</p>
+<p>Alice and Bob probably do <em>not</em> need to rebalance in this example. They are within 1 percentage point of their desired asset allocation in every asset class (row 7). The largest deviation is shown in cell D7 and D10 but is small compared to their portfolio.</p>
 <section id="a-different-scenario" class="level3">
 <h3 class="anchored" data-anchor-id="a-different-scenario">A Different Scenario</h3>
 <p>Let’s consider if Alice and Bob decide to increase their stock allocation to 75% (from 65%). In the Asset Allocation sheet:</p>
@@ -351,7 +353,7 @@ Tip
 <figcaption>Changing the stock allocation to 75%</figcaption>
 </figure>
 </div>
-<p>The Rebalance Matrix sheet automatically regenerates<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>:</p>
+<p>The Rebalance Matrix sheet automatically regenerates<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a>:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><a href="rebalance_matrix_75.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="Rebalance Matrix with 75% target stock allocation"><img src="rebalance_matrix_75.png" class="img-fluid figure-img" alt="Rebalance Matrix with 75% target stock allocation"></a></p>
@@ -359,10 +361,9 @@ Tip
 </figure>
 </div>
 <p>Alice and Bob may now want to start moving money <em>out</em> of bonds and <em>into</em> stocks.</p>
-<p>For example, US stocks are now 5.24 percentage points (cell B7) from target. $114,579 (cell B10) needs to flow from other asset classes into US Stocks to rebalance exactly. It’s not dire compared to their total portfolio size, but it is a little out of balance.</p>
-<p>Rebalancing can be a complicated exercise involving nuanced information such as future financial goals, unrealized gain amounts in taxable accounts, fund availability in retirement plans, desire for simplicity, etc.</p>
-<p>However, the spreadsheet makes it easier than other tools I have tried.</p>
-<p>Next in this example, I go to the Transactions sheet and make two new entries:</p>
+<p>US stocks are now 5.24 percentage points (cell B7) from target. $114,579 (cell B10) needs to flow from other asset classes into US Stocks to rebalance exactly. It’s not dire compared to their total portfolio size, but it is a little out of balance.</p>
+<p>Rebalancing can be a complicated exercise involving nuanced information such as future financial goals, unrealized gain amounts, fund availability, desire for simplicity, etc.</p>
+<p>For this example, I will go to the Transactions sheet to make two new entries:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><a href="rebalance_in_action.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10" title="A trial rebalance in the Transactions sheet"><img src="rebalance_in_action.png" class="img-fluid figure-img" alt="A trial rebalance in the Transactions sheet"></a></p>
@@ -371,10 +372,10 @@ Tip
 </div>
 <p>These rows represent an exchange Alice could <em>consider</em>:</p>
 <ol type="1">
-<li>A sale of $115,000 (<em>negative</em> shares) of FXNAX, a bond fund. The portfolio is currently overweight Nom. Bonds.</li>
-<li>With the proceeds, a purchase of $115,000 (<em>positive</em> shares) of FSKAX, a stock fund. The portfolio is currently underweight US Stocks.</li>
+<li>A sale of $115,000 (<em>negative</em> shares) of FXNAX, a nominal bond fund. The portfolio is currently overweight in Nom. Bonds.</li>
+<li>With the proceeds, a purchase of $115,000 (<em>positive</em> shares) of FSKAX, a US stock fund. The portfolio is currently underweight US Stocks.</li>
 </ol>
-<p>Because ballpark figures are OK, I used <code>=115000 / GOOGLEFINANCE("SYMBOL")</code> to get the rough number of shares for $115,000 at today’s prices. For the sale, I used <code>-115000</code>, a negative number.</p>
+<p>I used <code>=115000 / GOOGLEFINANCE("SYMBOL")</code> to get the rough number of shares for $115,000 of each fund at today’s prices. For the sale, I used <code>-115000</code>, a negative number.</p>
 <p>If Alice actually executed this trade, she would change the values to the exact share counts after the trade settled.</p>
 <p>Adding these two transactions causes the Rebalance Matrix to automatically regenerate:</p>
 <div class="quarto-figure quarto-figure-center">
@@ -385,7 +386,7 @@ Tip
 </div>
 <p>In cells B16-D17, the exchange is shown as $115,000 of newly purchased FSKAX (the stock fund) while FXNAX (the bond fund) shows a balance reduced by $115,000 compared to the prior screenshot.</p>
 <p>The Difference columns for US Stocks and Nom. Bonds are noticably more green.</p>
-<p>Although there is more to do, this exchange would help get the portfolio closer to alignment with its new target.</p>
+<p>Although there is more to do, this exchange would help get the portfolio closer to alignment with its new target. If it hadn’t, I would quickly delete the two mock transactions and try something else.</p>
 <p>Mocking out possible trades all at once has made rebalancing a lot more easy for me. And it is much quicker in a spreadsheet than most other tools.</p>
 </section>
 </section>
@@ -394,14 +395,12 @@ Tip
 <p>I am a long-term investor. That requires:</p>
 <ol type="1">
 <li>Creating an investment plan based on sound reasoning.</li>
-<li>Sticking to the investment plan.</li>
-<li>Ignoring noise from investors playing a different (short-term) game along the way.</li>
+<li>Sticking to the investment plan over many decades.</li>
+<li>Ignoring noise from investors playing a different (short-term) game.</li>
 </ol>
-<p>The spreadsheet is an attempt to give me useful, actionable information without the noise that most tools spam at me whenever I login.</p>
-<p>The spreadsheet intentionally contains no performance data. It would be difficult to manage dozens of securities or frequent trading.</p>
-<p>It is not the correct tool for those portfolios because those portfolios are not suited well for long-term investors.</p>
-<p>A modern, high growth, low fee portfolio sized well into the millions of dollars and consist only of a few index funds in a few accounts. Simplicity is desirable. Complexity and noise can hide nefarious behavior and high fees.</p>
-<p>The absolute first version of the spreadsheet (v0.1) is available as a Google Sheets template: <a href="https://docs.google.com/spreadsheets/d/186vSKdp0gJEWqmRKm1ezea9mgBACOBJQ_tc5dOl553c/template/preview">Investment Spreadsheet v0.1 (Google Sheets template)</a>.</p>
+<p>The spreadsheet is my attempt to give myself useful, actionable information without the noise that most commercial tools spam at me whenever I login.</p>
+<p>A portfolio of millions of dollars can be managed with a spreadsheet when it is constructed from a thoughtful handful of high quality, low fee funds in a small set of diversified asset classes. Complex investments or complicated management are not necessarily required even at relatively high balances.</p>
+<p>An early version of the spreadsheet (v0.1) is available as a Google Sheets template here: <a href="https://docs.google.com/spreadsheets/d/186vSKdp0gJEWqmRKm1ezea9mgBACOBJQ_tc5dOl553c/template/preview">Investment Spreadsheet v0.1 (Google Sheets template)</a>.</p>
 
 
 </section>
@@ -411,9 +410,10 @@ Tip
 
 <ol>
 <li id="fn1"><p>For example, what percentage is invested in US stocks across <em>all</em> of my accounts?<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>For example, what percentage to invest in US stocks versus other asset classes?<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>Treasury Inflation Protected Securities (government bonds with inflation protection in some cases)<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4"><p>Sometimes it does not automatically regenerate, but a value in the orange cell can be changed to force it to recalculate<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>VTI and other funds are used as examples only. Any fund supported by GOOGLEFINANCE can be used. Or worst case, the share price can be provided manually for custom funds or assets.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>For example, what percentage to invest in US stocks versus other asset classes?<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Treasury Inflation Protected Securities (government bonds with inflation protection in some cases)<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>Sometimes it does not automatically regenerate, but a value in the orange cell can be changed to force it to recalculate<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
