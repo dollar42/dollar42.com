@@ -129,7 +129,7 @@ For this example, I will show one possible transaction in what might need to be 
 These rows represent an exchange Alice could consider to rebalance from Nom. Bonds and into US Stocks in her Example Corp 401(k):
 
 1. A sale (negative shares) of $115,000 of FXNAX, a fund in the Nom. Bonds category that is currently overweight by $133,486 (cell D10).
-1. With the proceeds, a purchase (positive shares) of $115,000 of FSKAX, a US stock fund. $115,000 is a rounded off version of the current $114,579 inflow (cell B10) needed to reach the target allocation of US Stocks.
+1. With the proceeds, a purchase (positive shares) of $115,000 of FSKAX, a US stock fund. $115,000 is a rounded off version of the $114,579 inflow (cell B10) needed to reach the target allocation of US Stocks.
 
 I used `=115000 / GOOGLEFINANCE("SYMBOL")` to get the rough number of shares for $115,000 of each fund at today's prices. For the sale, I used `-115000`, a negative number.
 
@@ -141,9 +141,9 @@ Adding these two transactions causes the Rebalance Matrix to automatically regen
 
 In cells B16-D17, the exchange is shown as $115,000 of newly purchased FSKAX (the stock fund) while FXNAX (the bond fund) shows a balance reduced by $115,000 compared to the prior screenshot.
 
-The Difference columns for US Stocks and Nom. Bonds are noticeably more green.
+The Difference columns for US Stocks and Nom. Bonds (cells B10 and D10) are noticeably more green.
 
-Although there is more to do with Int'l Stocks and TIPS, this exchange would help get the portfolio closer to alignment with its new target. If it hadn't or if I spotted a better sequence of transactions, I would quickly delete the two mock transactions and try something else.
+Although there is more to do with Int'l Stocks and TIPS, this exchange would help get the portfolio closer to alignment with its new target. If it hadn't or if had I spotted a better sequence of transactions, I could quickly delete the two mock transactions and try something else.
 
 ::: {.mt-0 .callout-tip appearance="minimal"}
 **Mocking out possible transactions all at once ahead of time has made rebalancing a lot easier for me. It is much quicker in a spreadsheet than other tools I have tried.**
