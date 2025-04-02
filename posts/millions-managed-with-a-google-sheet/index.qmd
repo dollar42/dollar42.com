@@ -139,7 +139,9 @@ Adding these two transactions causes the Rebalance Matrix to automatically regen
 
 ![Rebalance Matrix after the exchange](rebalance_matrix_after_trade.png){fig-alt="Rebalance Matrix after rebalancing showing a more balanced portfolio"}
 
-In cells B16-D17, the exchange is shown as $115,000 of newly purchased FSKAX (the stock fund) while FXNAX (the bond fund) shows a balance reduced by $115,000 compared to the prior screenshot. Total balances have not changed because money is only moving from one fund to another, netting to zero.
+In cells B16-D17, the exchange is shown as $115,000 of newly purchased FSKAX (the stock fund) while FXNAX (the bond fund) shows a balance reduced by $115,000 compared to the prior screenshot.
+
+Total balances have not changed because money is only moving from the FXNAX fund to FSKAX, netting to zero in total.
 
 The Difference columns for US Stocks and Nom. Bonds (cells B10 and D10) are noticeably more green.
 
