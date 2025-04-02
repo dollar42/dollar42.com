@@ -183,7 +183,8 @@
 <figcaption>Rebalance Matrix after the exchange</figcaption>
 </figure>
 </div>
-<p>In cells B16-D17, the exchange is shown as $115,000 of newly purchased FSKAX (the stock fund) while FXNAX (the bond fund) shows a balance reduced by $115,000 compared to the prior screenshot. Total balances have not changed because money is only moving from one fund to another, netting to zero.</p>
+<p>In cells B16-D17, the exchange is shown as $115,000 of newly purchased FSKAX (the stock fund) while FXNAX (the bond fund) shows a balance reduced by $115,000 compared to the prior screenshot.</p>
+<p>Total balances have not changed because money is only moving from the FXNAX fund to FSKAX, netting to zero in total.</p>
 <p>The Difference columns for US Stocks and Nom. Bonds (cells B10 and D10) are noticeably more green.</p>
 <p>Although there is more to do with Int’l Stocks and TIPS, this exchange would help get the portfolio closer to alignment with its new target. If it hadn’t or if had I spotted a better sequence of transactions, I could quickly delete the two mock transactions and try something else.</p>
 <div class="mt-0 callout callout-style-simple callout-tip no-icon">
