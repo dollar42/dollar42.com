@@ -128,8 +128,8 @@ For this example, I will show one possible transaction in what might need to be 
 
 These rows represent an exchange Alice could consider to rebalance from Nom. Bonds and into US Stocks in her Example Corp 401(k):
 
-1. A sale (negative shares) of -11,068.335 shares of FXNAX, a fund in the Nom. Bonds category that is currently overweight by $133,486 (cell D10).
-1. With the proceeds, a purchase (positive shares) of $115,000 of FSKAX, a US stock fund. $115,000 is a rounded off version of the $114,579 inflow (cell B10) needed to reach the target allocation of US Stocks.
+1. A sale (negative number) of 11,068.335 shares of FXNAX, a fund in the Nom. Bonds category that is currently overweight by $133,486 (cell D10).
+1. Using the sale proceeds, a purchase (positive number) of $115,000 of FSKAX, a US stock fund. $115,000 is a rounded off version of the $114,579 inflow (cell B10) needed to reach the target allocation of US Stocks.
 
 I used `=115000 / GOOGLEFINANCE("SYMBOL")` to get the rough number of shares for $115,000 of each fund at today's prices. For the sale, I used `-115000`, a negative number.
 
