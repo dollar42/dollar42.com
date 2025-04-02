@@ -171,7 +171,7 @@
 </div>
 <p>These rows represent an exchange Alice could consider to rebalance from Nom. Bonds and into US Stocks in her Example Corp 401(k):</p>
 <ol type="1">
-<li>A sale (negative shares) of $115,000 of FXNAX, a fund in the Nom. Bonds category that is currently overweight by $133,486 (cell D10).</li>
+<li>A sale (negative shares) of -11,068.335 shares of FXNAX, a fund in the Nom. Bonds category that is currently overweight by $133,486 (cell D10).</li>
 <li>With the proceeds, a purchase (positive shares) of $115,000 of FSKAX, a US stock fund. $115,000 is a rounded off version of the $114,579 inflow (cell B10) needed to reach the target allocation of US Stocks.</li>
 </ol>
 <p>I used <code>=115000 / GOOGLEFINANCE("SYMBOL")</code> to get the rough number of shares for $115,000 of each fund at today’s prices. For the sale, I used <code>-115000</code>, a negative number.</p>
@@ -231,7 +231,7 @@
 <li id="fn2"><p>VTI and other funds are used as examples only. Any fund supported by GOOGLEFINANCE can be used. Or worst case, the share price can be provided manually for custom funds or assets.↩︎</p></li>
 <li id="fn3"><p>Treasury Inflation Protected Securities: a type of government bond that has some inflation protection features↩︎</p></li>
 <li id="fn4"><p>Nominal bonds are not automatically adjusted for inflation. For this example portfolio, nominal bonds mean US bonds <em>excluding</em> TIPS.↩︎</p></li>
-<li id="fn5"><p>Sometimes it does not automatically regenerate, but a value in the orange cell B2 can be changed to force it to recalculate↩︎</p></li>
+<li id="fn5"><p>Sometimes it does not automatically regenerate, but a value in the orange cell B1 can be changed to force it to recalculate↩︎</p></li>
 </ol>
 </section></div> ]]></description>
   <guid>https://www.dollar42.com/posts/millions-managed-with-a-google-sheet/</guid>
