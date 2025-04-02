@@ -110,7 +110,7 @@ But what if Alice and Bob want to experiment with raising their stock allocation
 
 ![Changing the stock allocation to 75%](stocks_to_75.png){fig-alt="Changing % Stock allocation to 75% in the investment spreadsheet"}
 
-The Rebalance Matrix sheet automatically regenerates^[Sometimes it does not automatically regenerate, but a value in the orange cell B2 can be changed to force it to recalculate]:
+The Rebalance Matrix sheet automatically regenerates^[Sometimes it does not automatically regenerate, but a value in the orange cell B1 can be changed to force it to recalculate]:
 
 ![Rebalance Matrix with 75% target stock allocation](rebalance_matrix_75.png){fig-alt="Rebalance Matrix showing an unbalanced portfolio in the investment spreadsheet"}
 
@@ -128,7 +128,7 @@ For this example, I will show one possible transaction in what might need to be 
 
 These rows represent an exchange Alice could consider to rebalance from Nom. Bonds and into US Stocks in her Example Corp 401(k):
 
-1. A sale (negative shares) of $115,000 of FXNAX, a fund in the Nom. Bonds category that is currently overweight by $133,486 (cell D10).
+1. A sale (negative shares) of -11,068.335 shares of FXNAX, a fund in the Nom. Bonds category that is currently overweight by $133,486 (cell D10).
 1. With the proceeds, a purchase (positive shares) of $115,000 of FSKAX, a US stock fund. $115,000 is a rounded off version of the $114,579 inflow (cell B10) needed to reach the target allocation of US Stocks.
 
 I used `=115000 / GOOGLEFINANCE("SYMBOL")` to get the rough number of shares for $115,000 of each fund at today's prices. For the sale, I used `-115000`, a negative number.
