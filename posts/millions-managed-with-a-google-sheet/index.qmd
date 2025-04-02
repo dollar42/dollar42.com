@@ -156,10 +156,10 @@ Although there is more to do with Int'l Stocks and TIPS, this exchange would hel
 Google Sheets helps me be a better long-term investor. To me that means:
 
 1. Creating an simple investment plan based on sensible principles.
-2. Sticking to the plan over many decades.
-3. Ignoring noise from investors playing a different (short-term or irrational) game.
+1. Consistently following the plan and rebalancing occasionally, regardless of the current news or politics.
+1. Ignoring noise from investors playing a different (short-term or irrational) game.
 
-The spreadsheet is my attempt to give myself actionable information without the noise that most commercial tools spam at me whenever I login.
+The spreadsheet is my attempt to give myself actionable information for my style of investing, without the noise that most commercial tools spam at me when I login.
 
 ::: {.mt-0 .callout-note appearance="minimal"}
 A portfolio of millions of dollars can be managed with a spreadsheet when it is constructed from a thoughtful handful of good funds representing a small set of diversified asset classes. **Complex investment products or complicated management strategies are not necessarily required even for relatively high portfolio balances.**
