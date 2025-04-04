@@ -7,7 +7,7 @@ lightbox: true
 format:
   html:
     other-links:
-      - text: Investment Spreadsheet v0.1 (Google Sheets template)
+      - text: Investment Spreadsheet (Google Sheets template)
         icon: file-spreadsheet
         href: https://docs.google.com/spreadsheets/d/1pUflVlVQnK7GzkTGn7WQMZsQdgxwewwoqeI66X-Yt9U/template/preview
 ---
