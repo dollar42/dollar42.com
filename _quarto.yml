@@ -65,7 +65,7 @@ format:
       - text: |-
           <script type="text/javascript">
           function submitAsUsual(e) {
-            $(e.target).closest("form").submit();
+            e.target.closest("form").submit();
           }
           </script>
       - text: |-
