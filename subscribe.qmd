@@ -25,6 +25,10 @@ Sign up below to receive emails with new posts from Dollar42.
         <input type="email" class="form-control form-control-sm" name="email">
         <label for="email">Email</label>
       </div>
+      <div class="mb-1 form-floating">
+        <div class="h-captcha" data-sitekey="75b2cc2c-0100-44dc-bec4-da6e4156635a"></div>
+        <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+      </div>
 
       <input type="submit" value="Subscribe" class="btn btn-primary">
     </form>
