@@ -63,5 +63,11 @@ format:
       - custom.scss
     include-in-header:
       - text: |-
+          <script type="text/javascript">
+          function submitAsUsual(e) {
+            $(e.target).closest("form").submit();
+          }
+          </script>
+      - text: |-
           <meta name="twitter:card" content="summary_large_image">
           <meta name="twitter:creator" content="@alindeman">
