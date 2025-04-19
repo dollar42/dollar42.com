@@ -104,6 +104,11 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-PZZF4E441G', { 'anonymize_ip': true});
 </script>
+<script type="text/javascript">
+function submitAsUsual(e) {
+  $(e.target).closest("form").submit();
+}
+</script>
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:creator" content="@alindeman">
 
@@ -251,12 +256,9 @@ window.Quarto = {
         <input type="email" class="form-control form-control-sm" name="email">
         <label for="email">Email</label>
       </div>
-      <div class="mb-1 form-floating">
-        <div class="h-captcha" data-sitekey="75b2cc2c-0100-44dc-bec4-da6e4156635a"></div>
-        <script src="https://js.hcaptcha.com/1/api.js" async="" defer=""></script>
-      </div>
 
-      <input type="submit" value="Subscribe" class="btn btn-primary">
+      <script src="https://js.hcaptcha.com/1/api.js" async="" defer=""></script>
+      <input type="submit" value="Subscribe" class="btn btn-primary h-captcha" data-sitekey="75b2cc2c-0100-44dc-bec4-da6e4156635a" data-callback="submitAsUsual">
     </form>
   </div>
 </div>
@@ -284,7 +286,7 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1743552000000" data-listing-file-modified-sort="1745104575247" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1563">
+<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1743552000000" data-listing-file-modified-sort="1745105259594" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1563">
 <div class="thumbnail">
 <p><a href="./posts/millions-managed-with-a-google-sheet/index.html" class="no-external"></a></p><a href="./posts/millions-managed-with-a-google-sheet/index.html" class="no-external">
 <p><img loading="lazy" src="./posts/millions-managed-with-a-google-sheet/rebalance_matrix.png" class="thumbnail-image"></p>
