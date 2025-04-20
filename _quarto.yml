@@ -64,8 +64,8 @@ format:
     include-in-header:
       - text: |-
           <script type="text/javascript">
-          function submitAsUsual(e) {
-            e.target.closest("form").submit();
+          function submitSubscribeForm(e) {
+            $(".subscribe-form").submit();
           }
           </script>
       - text: |-
