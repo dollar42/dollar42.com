@@ -1,5 +1,5 @@
 ---
-title: "ESPP In This Economy?"
+title: "ESPP? In This Economy?"
 description: "Employee Stock Purchase Plans can generate thousands in extra income no matter what happens in the stock market."
 date: "2025-04-21"
 draft: true
@@ -41,9 +41,7 @@ Most people misunderstand Employee Stock Purchase Plans (ESPPs).
 
 Even during the COVID stock market crash, I contributed the maximum to my employer's ESPP.
 
-Why? 
-
-No matter how the stock performed, **I earned a 91.57% interest rate on my contributions**.
+The money was only tied up for a few months at a time. And as the stock price crashed, **I still earned a 91.57% interest rate on my contributions**.
 
 A "good" ESPP generates hundreds or thousands of extra dollars with little risk. The strategy is simple:
 
@@ -54,21 +52,23 @@ A "good" ESPP generates hundreds or thousands of extra dollars with little risk.
 
 Selling immediately is crucial because holding the shares long-term is risky for most people.
 
-The _potential_ tax benefit of long-term capital gains rates is not compelling when weighed against the idiosyncratic risk and volatility of a single stock. One bad news story could wipe out the entire profit and more, and it becomes more likely the longer the shares remain unsold^[Some ESPPs restrict employees from selling their purchased shares immediately. That makes participating in the ESPP more risky, and it may be too risky for some people in some cases.].
+The _potential_ tax benefit of long-term capital gains rates is not compelling when weighed against the volatility of a single stock. One bad news story could wipe out the entire profit and more, and it becomes more likely the longer the shares remain unsold^[Some ESPPs restrict employees from selling their purchased shares immediately. That makes participating in the ESPP more risky, and it may be too risky for some people in these cases.].
 
 ## Interest Rates
 
-Question: if an ESPP offers a 15% discount on shares every 6 months, is that equivalent to a 15% annualized interest rate in a bank account?
+Question: if an ESPP offers a 15% discount on shares every 6 months, is that equivalent to a 15% annualized interest rate?
 
 No. **The ESPP earns about 91.57% annualized interest**.
 
-It's a much better deal.
+91.57% is a much better deal than 15%.
 
-A bank account with a 15% interest rate earns the full 15% only on money present in the account for an entire year.
+Consider that an account with a 15% interest rate earns the full 15% only on money present in the account for the entire year.
 
-In the ESPP, money is tied up for 3 months on average (half of the purchase period). With contributions each bimonthly paycheck, the first is escrowed for 6 months, the next for 5.5 months, etc. until the final one is only escrowed for a few days. This averages to 3 months.
+By contrast, ESPP contributions are only tied up for 3 months on average (half of the purchase period), much less than an entire year.
 
-The result is a much higher apples-to-apples rate:
+Assuming contributions happen each bimonthly paycheck, the first contribution is escrowed for 6 months, the next for 5.5 months, etc. until the final one is escrowed for a few days. The overall average is 3 months.
+
+A 15% discount applied over a 3 month period works out to an exceptionally high 91.57% annualized rate:
 
 $$
 \begin{flalign}
@@ -83,6 +83,8 @@ $$
 <small>$t=4$ because there are 4 3-month quarters in a year.</small>
 
 To calculate ESPP profit for your own plan, try the tool on the right.
+
+In summary, the ESPP "sticker" discount rate of 5&ndash;15% is not the full story!
 
 ```{ojs}
 //| panel: sidebar
@@ -128,16 +130,18 @@ When the stock rises in value, shares are purchased at a discount from the earli
 
 When the stock falls in value, shares are purchased at a discount from the current market price on the purchase date.
 
-There is profit in either scenario as long as the shares are sold immediately to lock it in.
+There is profit in either scenario as long as the shares are sold immediately to lock in the gain.
 
 To calculate ESPP profit for your own plan that has a lookback feature, try the tool on the right.
 
-Try different scenarios, including ones where the stock loses value over the purchase period.
+Try different scenarios, including ones where the stock loses value over the purchase period. It is still pretty good, right?
+
+A lookback feature, if it exists, will be described in the plan documents.
 
 ```{ojs}
 //| panel: sidebar
 
-html `<figcaption>ESPP Interest Rate Calculator</figcaption>`;
+html `<figcaption>ESPP Interest Rate Calculator (with lookback)</figcaption>`;
 
 viewof lookback_purchase_period_in_months = Inputs.select([3, 6, 12], {
   label: "Purchase Period",
@@ -192,7 +196,7 @@ html `Annualized interest rate: <strong class="fs-1">${(100.0 * lookback_interes
 
 ESPP administration and tax law have caveats that change the math in some scenarios. However, I have never seen these issues alone make a plan undesirable.
 
-Capturing the exceptional interest rate requires selling the shares as quickly as possible every time. I set a recurring reminder for myself so I do not forget.
+For instance, capturing the exceptional interest rate requires selling the shares as quickly as possible every time. I set a recurring reminder for myself so I do not forget.
 
 Commissions and fees reduce the effective interest rate slightly.
 
@@ -208,8 +212,8 @@ Some plans allow employees to withdraw from the plan during a purchase period an
 
 ## Planning
 
-How does an ESPP fit into a tax-efficient financial plan? It definitely depends.
+How does an ESPP fit into a tax-efficient financial plan? It will always come down to an individual's specific goals and circumstances.
 
-But a "good" ESPP likely has a place for anyone wanting to earn an exceptional interest rate in exchange for a locking money up for a short time.
+But "good" plans have such a high effective interest rate that anyone who can afford to defer income for a few months may want to consider them.
 
 I offer consulting about ESPP and many other tax topics. [Reach out if I can help](/about.html).
