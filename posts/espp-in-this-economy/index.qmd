@@ -204,7 +204,7 @@ Commissions and fees reduce the effective interest rate slightly.
 
 Some plans allow purchasing partial shares. Others may only allow whole shares; in that case, the "change" will be refunded on a future paycheck.
 
-Qualified (tax efficient) plans under [&sect;423](https://www.law.cornell.edu/uscode/text/26/423) are limited to $25,000 of stock per year. With a 15% discount, the maximum contribution works out to be $21,250.
+Qualified (tax efficient) plans under [&sect;423](https://www.law.cornell.edu/uscode/text/26/423) are limited to $25,000 of stock per year^[$25,000 was [written into law in 1964](https://www.govinfo.gov/content/pkg/STATUTE-78/pdf/STATUTE-78-Pg19.pdf) and has not changed since. The [BLS CPI calculator](https://www.bls.gov/data/inflation_calculator.htm) estimates this amount as $258,737 in today's dollars as of March 2025.]. With a 15% discount, the maximum contribution works out to be $21,250.
 
 When a stock rises in value over the offering period, plans with a lookback feature may limit the number of shares that can be purchased. The "change" above and beyond this amount will again be refunded, but it will also lower the effective interest rate.
 
