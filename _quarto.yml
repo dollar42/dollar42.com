@@ -65,7 +65,7 @@ format:
       - text: |-
           <script type="text/javascript">
           function submitSubscribeForm(e) {
-            $(".subscribe-form").submit();
+            document.querySelector(".subscribe-form").submit();
           }
           </script>
       - text: |-
