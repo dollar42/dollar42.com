@@ -126,7 +126,7 @@ With a lookback, the discount is applied to the price at the start of an offerin
 
 When the stock rises in value, shares are purchased at a discount from the earlier price, leading to even higher built-in profit.
 
-When the stock falls in value, shares are purchased at a discount from current market price on the purchase date.
+When the stock falls in value, shares are purchased at a discount from the current market price on the purchase date.
 
 There is profit in either scenario as long as the shares are sold immediately to lock it in.
 
@@ -208,7 +208,7 @@ Some plans allow employees to withdraw from the plan during a purchase period an
 
 ## Planning
 
-How does an  fit into a tax-efficient financial plan? It definitely depends.
+How does an ESPP fit into a tax-efficient financial plan? It definitely depends.
 
 But a "good" ESPP likely has a place for anyone wanting to earn an exceptional interest rate in exchange for a locking money up for a short time.
 
