@@ -196,7 +196,9 @@ html `Annualized interest rate: <strong class="fs-1">${(100.0 * lookback_interes
 
 ESPP administration and tax law have caveats that change the math in some scenarios. However, I have never seen these issues alone make a plan undesirable.
 
-For instance, capturing the exceptional interest rate requires selling the shares as quickly as possible every time. I set a recurring reminder for myself so I do not forget.
+For instance, capturing the exceptional interest rate requires selling the shares as quickly as possible every time.
+
+Even so, volatility in the stock price between the purchase date and when the stock can later be sold means the profit will inevitably be a little higher or lower than the calculators show. I set a recurring reminder for myself to remember to sell as quickly as feasible to reduce the impact of this volatility.
 
 Commissions and fees reduce the effective interest rate slightly.
 
