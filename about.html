@@ -72,8 +72,8 @@ gtag('js', new Date());
 gtag('config', 'G-PZZF4E441G', { 'anonymize_ip': true});
 </script>
 <script type="text/javascript">
-function submitAsUsual(e) {
-  e.target.closest("form").submit();
+function submitSubscribeForm(e) {
+  $(".subscribe-form").submit();
 }
 </script>
 <meta name="twitter:card" content="summary_large_image">
@@ -158,7 +158,7 @@ function submitAsUsual(e) {
 <div class="card text-bg-light">
   <div class="card-body">
     <h5 class="card-title">Subscribe</h5>
-    <form method="post" action="https://lists.dollar42.com/subscription/form">
+    <form class="subscribe-form" method="post" action="https://lists.dollar42.com/subscription/form">
       <input type="hidden" name="l" value="13e77c11-6775-42bb-b371-fc8db830e7bf">
 
       <div class="mb-1">
@@ -174,7 +174,7 @@ function submitAsUsual(e) {
       </div>
 
       <script src="https://js.hcaptcha.com/1/api.js" async="" defer=""></script>
-      <input type="submit" value="Subscribe" class="btn btn-primary h-captcha" data-sitekey="75b2cc2c-0100-44dc-bec4-da6e4156635a" data-callback="submitAsUsual">
+      <input type="submit" value="Subscribe" class="btn btn-primary h-captcha" data-sitekey="75b2cc2c-0100-44dc-bec4-da6e4156635a" data-callback="submitSubscribeForm">
     </form>
   </div>
 </div>
