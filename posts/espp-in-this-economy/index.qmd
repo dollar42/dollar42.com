@@ -10,7 +10,7 @@ format:
 ---
 
 ```{dot}
-//| fig-cap: An ESPP allows employees to purchase shares at a discount with after-tax money.
+//| fig-cap: An ESPP allows employees to purchase shares at a discount with after-tax money. There is built-in profit when the shares are purchased.
 //| fig-width: 2
 //| fig-height: 5
 //| column: margin
