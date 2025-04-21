@@ -41,7 +41,7 @@ Most people misunderstand Employee Stock Purchase Plans (ESPPs).
 
 Even during the COVID stock market crash, I contributed the maximum to my employer's ESPP.
 
-And as the stock price crashed, **I still earned a 91.57% interest rate on my contributions**.
+As the stock price crashed, **I still earned a 91.57% interest rate on my contributions**.
 
 A "good" ESPP generates hundreds or thousands of extra dollars with little risk. The strategy is simple:
 
@@ -90,7 +90,7 @@ $$
 
 The first $71 was escrowed for 6 months, the next $71 was escrowed for 5.5 months, etc. until the final one for only a few days. On _average_, one of my dollars was tied up for 3 months (half of the purchase period).
 
-So yes, a 15% discount applied over a 3 month period works out to an exceptionally high 91.57% annualized rate:
+So yes, $850 that turns into $1,000 in 3 months works out to an exceptionally high 91.57% annualized rate:
 
 $$
 \begin{flalign}
