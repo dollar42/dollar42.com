@@ -74,7 +74,8 @@ gtag('config', 'G-PZZF4E441G', { 'anonymize_ip': true});
 </script>
 <script type="text/javascript">
 function submitSubscribeForm(e) {
-  document.querySelector(".subscribe-form").submit();
+  const subscribeForms = Array.from(document.querySelectorAll(".subscribe-form"));
+  subscribeForms.at(-1).submit();
 }
 </script>
 <meta name="twitter:card" content="summary_large_image">
