@@ -111,15 +111,7 @@ It takes a _full year_ at 17.65% interest to generate $150 from $850.
 
 Intuitively the ESPP equivalent rate must be higher than an account paying 17.65% interest.
 
-With ESPP, I contributed $71 twice per month for 6 months:
-
-$$
-\begin{flalign}
-\frac{\text{contribution}}{\text{paycheck}} * 12 \text{ paychecks} & \approx 850 \text{ dollars} \\
-\frac{\text{contribution}}{\text{paycheck}} & \approx \frac{850}{12} \text{ dollars} \\
-\frac{\text{contribution}}{\text{paycheck}} & \approx 71 \text{ dollars}
-\end{flalign}
-$$
+With ESPP, I contributed $71 twice per month for 6 months (totaling approximately $850).
 
 The first $71 was escrowed for about 6 months, the next $71 for 5.5 months, etc. until the final contribution for only a few days or weeks. On _average_, one of my dollars was tied up for approximately 3 months (half of the purchase period).
 
