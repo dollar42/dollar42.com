@@ -65,7 +65,8 @@ format:
       - text: |-
           <script type="text/javascript">
           function submitSubscribeForm(e) {
-            document.querySelector(".subscribe-form").submit();
+            const subscribeForms = Array.from(document.querySelectorAll(".subscribe-form"));
+            subscribeForms.at(-1).submit();
           }
           </script>
       - text: |-
