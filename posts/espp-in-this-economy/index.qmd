@@ -88,7 +88,7 @@ $$
 \end{flalign}
 $$
 
-The first $71 was escrowed for 6 months, the next $71 was escrowed for 5.5 months, etc. until the final one for only a few days. On _average_, one of my dollars was tied up for 3 months (half of the purchase period).
+The first $71 was escrowed for 6 months, the next $71 was escrowed for 5.5 months, etc. until the final contribution for only a few days. On _average_, one of my dollars was tied up for 3 months (half of the purchase period).
 
 So yes, $850 that turns into $1,000 in 3 months works out to an exceptionally high 91.57% annualized rate:
 
