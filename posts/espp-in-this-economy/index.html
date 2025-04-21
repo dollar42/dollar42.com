@@ -74,7 +74,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-8dd521c937f9ccb819e9e06aa99567fc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-435394ec863383d7a3f89642909487e2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -345,8 +345,124 @@ window.Quarto = {
 <p>The <em>potential</em> tax benefits of long-term ownership are not compelling when weighed against the volatility of a single stock. One bad news story could wipe out the entire profit or even cause a net loss.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
 <section id="example" class="level2">
 <h2 class="anchored" data-anchor-id="example">Example</h2>
-<div class="panel-grid layout-sidebar ms-md-0 layout-sidebar-right">
-<div class="panel-fill g-col-24 g-col-lg-17 pt-3 pt-lg-0">
+<div class="cell w-33-md m-1 p-2 float-end bg-light border border-primary-subtle">
+<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="63" data-source-offset="-1"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 62;"><span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span> <span class="vs">`&lt;figcaption&gt;ESPP Interest Rate Calculator&lt;/figcaption&gt;`</span><span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-1" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<div class="sourceCode cell-code hidden" id="cb2" data-startfrom="65" data-source-offset="-65"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 64;"><span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a>viewof purchase_period_in_months <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>([<span class="dv">3</span><span class="op">,</span> <span class="dv">6</span><span class="op">,</span> <span class="dv">12</span>]<span class="op">,</span> {</span>
+<span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a>  <span class="dt">label</span><span class="op">:</span> <span class="st">"Purchase Period"</span><span class="op">,</span></span>
+<span id="cb2-67"><a href="#cb2-67" aria-hidden="true" tabindex="-1"></a>  <span class="dt">format</span><span class="op">:</span> (m) <span class="kw">=&gt;</span> <span class="vs">`</span><span class="sc">${</span>m<span class="sc">}</span><span class="vs"> months`</span><span class="op">,</span></span>
+<span id="cb2-68"><a href="#cb2-68" aria-hidden="true" tabindex="-1"></a>  <span class="dt">value</span><span class="op">:</span> <span class="dv">6</span><span class="op">,</span></span>
+<span id="cb2-69"><a href="#cb2-69" aria-hidden="true" tabindex="-1"></a>})<span class="op">;</span></span>
+<span id="cb2-70"><a href="#cb2-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-71"><a href="#cb2-71" aria-hidden="true" tabindex="-1"></a>viewof discount_percent <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">number</span>([<span class="dv">0</span><span class="op">,</span> <span class="kw">Infinity</span>]<span class="op">,</span> {</span>
+<span id="cb2-72"><a href="#cb2-72" aria-hidden="true" tabindex="-1"></a>  <span class="dt">label</span><span class="op">:</span> <span class="st">"Discount (%)"</span><span class="op">,</span></span>
+<span id="cb2-73"><a href="#cb2-73" aria-hidden="true" tabindex="-1"></a>  <span class="dt">step</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span></span>
+<span id="cb2-74"><a href="#cb2-74" aria-hidden="true" tabindex="-1"></a>  <span class="dt">value</span><span class="op">:</span> <span class="dv">15</span><span class="op">,</span></span>
+<span id="cb2-75"><a href="#cb2-75" aria-hidden="true" tabindex="-1"></a>})<span class="op">;</span></span>
+<span id="cb2-76"><a href="#cb2-76" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-77"><a href="#cb2-77" aria-hidden="true" tabindex="-1"></a>value_of_stock_per_dollar_contributed <span class="op">=</span> (<span class="fl">1.0</span> <span class="op">/</span> (<span class="fl">1.0</span> <span class="op">-</span> (discount_percent <span class="op">/</span> <span class="fl">100.0</span>)))<span class="op">;</span></span>
+<span id="cb2-78"><a href="#cb2-78" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-79"><a href="#cb2-79" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span> <span class="vs">`&lt;hr&gt;`</span><span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-3" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-4" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-5" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<div class="sourceCode cell-code hidden" id="cb3" data-startfrom="80" data-source-offset="-414"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 79;"><span id="cb3-80"><a href="#cb3-80" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span> <span class="vs">`For every &lt;strong&gt;$1&lt;/strong&gt; contributed, &lt;strong&gt;$</span><span class="sc">${</span>value_of_stock_per_dollar_contributed<span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">2</span>)<span class="sc">}</span><span class="vs">&lt;/strong&gt; worth of company stock is purchased`</span><span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-6" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<div class="sourceCode cell-code hidden" id="cb4" data-startfrom="82" data-source-offset="-572"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 81;"><span id="cb4-82"><a href="#cb4-82" aria-hidden="true" tabindex="-1"></a>average_escrow_time_in_months <span class="op">=</span> purchase_period_in_months <span class="op">/</span> <span class="fl">2.0</span><span class="op">;</span></span>
+<span id="cb4-83"><a href="#cb4-83" aria-hidden="true" tabindex="-1"></a>average_escrow_time_in_years <span class="op">=</span> average_escrow_time_in_months <span class="op">/</span> <span class="fl">12.0</span><span class="op">;</span></span>
+<span id="cb4-84"><a href="#cb4-84" aria-hidden="true" tabindex="-1"></a>interest_rate <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">pow</span>(value_of_stock_per_dollar_contributed<span class="op">,</span> <span class="fl">1.0</span> <span class="op">/</span> average_escrow_time_in_years) <span class="op">-</span> <span class="fl">1.0</span><span class="op">;</span></span>
+<span id="cb4-85"><a href="#cb4-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-86"><a href="#cb4-86" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span> <span class="vs">`&lt;hr&gt;`</span><span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-7" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-8" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-9" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-10" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<div class="sourceCode cell-code hidden" id="cb5" data-startfrom="87" data-source-offset="-827"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 86;"><span id="cb5-87"><a href="#cb5-87" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span> <span class="vs">`On average, money is escrowed for &lt;strong&gt;</span><span class="sc">${</span>average_escrow_time_in_months<span class="sc">}</span><span class="vs"> months&lt;/strong&gt;`</span><span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-11" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<div class="sourceCode cell-code hidden" id="cb6" data-startfrom="88" data-source-offset="-926"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 87;"><span id="cb6-88"><a href="#cb6-88" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span> <span class="vs">`&lt;hr&gt;`</span><span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-12" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<div class="sourceCode cell-code hidden" id="cb7" data-startfrom="89" data-source-offset="-939"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 88;"><span id="cb7-89"><a href="#cb7-89" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span> <span class="vs">`Annualized interest rate: &lt;strong class="fs-1"&gt;</span><span class="sc">${</span>(<span class="fl">100.0</span> <span class="op">*</span> interest_rate)<span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">2</span>)<span class="sc">}</span><span class="vs">%&lt;/strong&gt;`</span><span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-13" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</div>
 <p><strong>Scenario</strong>: I contributed $850 over 6 months to an ESPP and receive $1,000 worth of stock (15% discount).</p>
 <p><strong>Question</strong>: What is the effective annualized interest rate if I sell immediately and receive $1,000 in cash (skimming $150 of profit)?</p>
 <p>I think it is 91.57%. Can it really be true?</p>
@@ -384,143 +500,11 @@ r &amp;= \biggl(\frac{A}{P}\biggl)^t - 1 \\
 <p><small><span class="math inline">\(t=4\)</span> because there are 4 3-month quarters in a year.</small></p>
 <p>To calculate ESPP profit for your own plan, try the tool on the right.</p>
 <p>In summary, the ESPP “sticker” discount rate of 5–15% is not the full story!</p>
-</div>
-<div class="cell panel-sidebar card bg-light p-2 g-col-24 g-col-lg-7">
-<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="114" data-source-offset="-1"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 113;"><span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span> <span class="vs">`&lt;figcaption&gt;ESPP Interest Rate Calculator&lt;/figcaption&gt;`</span><span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-1-1" data-nodetype="expression">
-
-</div>
-</div>
-</div>
-<div class="sourceCode cell-code hidden" id="cb2" data-startfrom="116" data-source-offset="-65"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 115;"><span id="cb2-116"><a href="#cb2-116" aria-hidden="true" tabindex="-1"></a>viewof purchase_period_in_months <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>([<span class="dv">3</span><span class="op">,</span> <span class="dv">6</span><span class="op">,</span> <span class="dv">12</span>]<span class="op">,</span> {</span>
-<span id="cb2-117"><a href="#cb2-117" aria-hidden="true" tabindex="-1"></a>  <span class="dt">label</span><span class="op">:</span> <span class="st">"Purchase Period"</span><span class="op">,</span></span>
-<span id="cb2-118"><a href="#cb2-118" aria-hidden="true" tabindex="-1"></a>  <span class="dt">format</span><span class="op">:</span> (m) <span class="kw">=&gt;</span> <span class="vs">`</span><span class="sc">${</span>m<span class="sc">}</span><span class="vs"> months`</span><span class="op">,</span></span>
-<span id="cb2-119"><a href="#cb2-119" aria-hidden="true" tabindex="-1"></a>  <span class="dt">value</span><span class="op">:</span> <span class="dv">6</span><span class="op">,</span></span>
-<span id="cb2-120"><a href="#cb2-120" aria-hidden="true" tabindex="-1"></a>})<span class="op">;</span></span>
-<span id="cb2-121"><a href="#cb2-121" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-122"><a href="#cb2-122" aria-hidden="true" tabindex="-1"></a>viewof discount_percent <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">number</span>([<span class="dv">0</span><span class="op">,</span> <span class="kw">Infinity</span>]<span class="op">,</span> {</span>
-<span id="cb2-123"><a href="#cb2-123" aria-hidden="true" tabindex="-1"></a>  <span class="dt">label</span><span class="op">:</span> <span class="st">"Discount (%)"</span><span class="op">,</span></span>
-<span id="cb2-124"><a href="#cb2-124" aria-hidden="true" tabindex="-1"></a>  <span class="dt">step</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span></span>
-<span id="cb2-125"><a href="#cb2-125" aria-hidden="true" tabindex="-1"></a>  <span class="dt">value</span><span class="op">:</span> <span class="dv">15</span><span class="op">,</span></span>
-<span id="cb2-126"><a href="#cb2-126" aria-hidden="true" tabindex="-1"></a>})<span class="op">;</span></span>
-<span id="cb2-127"><a href="#cb2-127" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-128"><a href="#cb2-128" aria-hidden="true" tabindex="-1"></a>value_of_stock_per_dollar_contributed <span class="op">=</span> (<span class="fl">1.0</span> <span class="op">/</span> (<span class="fl">1.0</span> <span class="op">-</span> (discount_percent <span class="op">/</span> <span class="fl">100.0</span>)))<span class="op">;</span></span>
-<span id="cb2-129"><a href="#cb2-129" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-130"><a href="#cb2-130" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span> <span class="vs">`&lt;hr&gt;`</span><span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-1-2" data-nodetype="declaration">
-
-</div>
-</div>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-1-3" data-nodetype="declaration">
-
-</div>
-</div>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-1-4" data-nodetype="declaration">
-
-</div>
-</div>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-1-5" data-nodetype="expression">
-
-</div>
-</div>
-</div>
-<div class="sourceCode cell-code hidden" id="cb3" data-startfrom="131" data-source-offset="-414"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 130;"><span id="cb3-131"><a href="#cb3-131" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span> <span class="vs">`For every &lt;strong&gt;$1&lt;/strong&gt; contributed, &lt;strong&gt;$</span><span class="sc">${</span>value_of_stock_per_dollar_contributed<span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">2</span>)<span class="sc">}</span><span class="vs">&lt;/strong&gt; worth of company stock is purchased`</span><span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-1-6" data-nodetype="expression">
-
-</div>
-</div>
-</div>
-<div class="sourceCode cell-code hidden" id="cb4" data-startfrom="133" data-source-offset="-572"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 132;"><span id="cb4-133"><a href="#cb4-133" aria-hidden="true" tabindex="-1"></a>average_escrow_time_in_months <span class="op">=</span> purchase_period_in_months <span class="op">/</span> <span class="fl">2.0</span><span class="op">;</span></span>
-<span id="cb4-134"><a href="#cb4-134" aria-hidden="true" tabindex="-1"></a>average_escrow_time_in_years <span class="op">=</span> average_escrow_time_in_months <span class="op">/</span> <span class="fl">12.0</span><span class="op">;</span></span>
-<span id="cb4-135"><a href="#cb4-135" aria-hidden="true" tabindex="-1"></a>interest_rate <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">pow</span>(value_of_stock_per_dollar_contributed<span class="op">,</span> <span class="fl">1.0</span> <span class="op">/</span> average_escrow_time_in_years) <span class="op">-</span> <span class="fl">1.0</span><span class="op">;</span></span>
-<span id="cb4-136"><a href="#cb4-136" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-137"><a href="#cb4-137" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span> <span class="vs">`&lt;hr&gt;`</span><span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-1-7" data-nodetype="declaration">
-
-</div>
-</div>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-1-8" data-nodetype="declaration">
-
-</div>
-</div>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-1-9" data-nodetype="declaration">
-
-</div>
-</div>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-1-10" data-nodetype="expression">
-
-</div>
-</div>
-</div>
-<div class="sourceCode cell-code hidden" id="cb5" data-startfrom="138" data-source-offset="-827"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 137;"><span id="cb5-138"><a href="#cb5-138" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span> <span class="vs">`On average, money is escrowed for &lt;strong&gt;</span><span class="sc">${</span>average_escrow_time_in_months<span class="sc">}</span><span class="vs"> months&lt;/strong&gt;`</span><span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-1-11" data-nodetype="expression">
-
-</div>
-</div>
-</div>
-<div class="sourceCode cell-code hidden" id="cb6" data-startfrom="139" data-source-offset="-926"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 138;"><span id="cb6-139"><a href="#cb6-139" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span> <span class="vs">`&lt;hr&gt;`</span><span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-1-12" data-nodetype="expression">
-
-</div>
-</div>
-</div>
-<div class="sourceCode cell-code hidden" id="cb7" data-startfrom="140" data-source-offset="-939"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 139;"><span id="cb7-140"><a href="#cb7-140" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span> <span class="vs">`Annualized interest rate: &lt;strong class="fs-1"&gt;</span><span class="sc">${</span>(<span class="fl">100.0</span> <span class="op">*</span> interest_rate)<span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">2</span>)<span class="sc">}</span><span class="vs">%&lt;/strong&gt;`</span><span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-1-13" data-nodetype="expression">
-
-</div>
-</div>
-</div>
-</div>
-</div>
 </section>
 <section id="lookback" class="level2">
 <h2 class="anchored" data-anchor-id="lookback">Lookback</h2>
-<div class="panel-grid layout-sidebar ms-md-0 layout-sidebar-right">
-<div class="panel-fill g-col-24 g-col-lg-17 pt-3 pt-lg-0">
-<p>The best ESPPs offer a lookback feature.</p>
-<p>With a lookback, the discount is applied to the price at the start of an offering period or the price on the purchase date, <em>whichever is lower</em>.</p>
-<p>“Whichever is lower” makes it difficult to lose.</p>
-<p>When the stock rises in value, shares are purchased at a discount from the earlier price, leading to even higher built-in profit.</p>
-<p>When the stock falls in value, shares are purchased at a discount from the current market price on the purchase date.</p>
-<p>There is profit in either scenario as long as the shares are sold immediately to lock in the gain.</p>
-<p>To calculate ESPP profit for your own plan that has a lookback feature, try the tool on the right.</p>
-<p>Try different scenarios, including ones where the stock loses value over the purchase period. It is still pretty good, right?</p>
-<p>A lookback feature, if it exists, will be described in the plan documents.</p>
-</div>
-<div class="cell panel-sidebar card bg-light p-2 g-col-24 g-col-lg-7">
-<div class="sourceCode cell-code hidden" id="cb8" data-startfrom="166" data-source-offset="-1"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 165;"><span id="cb8-166"><a href="#cb8-166" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span> <span class="vs">`&lt;figcaption&gt;ESPP Interest Rate Calculator (with lookback)&lt;/figcaption&gt;`</span><span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell w-33-md m-1 p-2 float-end bg-light border border-primary-subtle">
+<div class="sourceCode cell-code hidden" id="cb8" data-startfrom="149" data-source-offset="-1"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 148;"><span id="cb8-149"><a href="#cb8-149" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span> <span class="vs">`&lt;figcaption&gt;ESPP Interest Rate Calculator (with lookback)&lt;/figcaption&gt;`</span><span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-2-1" data-nodetype="expression">
@@ -528,34 +512,34 @@ r &amp;= \biggl(\frac{A}{P}\biggl)^t - 1 \\
 </div>
 </div>
 </div>
-<div class="sourceCode cell-code hidden" id="cb9" data-startfrom="168" data-source-offset="-81"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 167;"><span id="cb9-168"><a href="#cb9-168" aria-hidden="true" tabindex="-1"></a>viewof lookback_purchase_period_in_months <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>([<span class="dv">3</span><span class="op">,</span> <span class="dv">6</span><span class="op">,</span> <span class="dv">12</span>]<span class="op">,</span> {</span>
-<span id="cb9-169"><a href="#cb9-169" aria-hidden="true" tabindex="-1"></a>  <span class="dt">label</span><span class="op">:</span> <span class="st">"Purchase Period"</span><span class="op">,</span></span>
-<span id="cb9-170"><a href="#cb9-170" aria-hidden="true" tabindex="-1"></a>  <span class="dt">format</span><span class="op">:</span> (m) <span class="kw">=&gt;</span> <span class="vs">`</span><span class="sc">${</span>m<span class="sc">}</span><span class="vs"> months`</span><span class="op">,</span></span>
-<span id="cb9-171"><a href="#cb9-171" aria-hidden="true" tabindex="-1"></a>  <span class="dt">value</span><span class="op">:</span> <span class="dv">6</span><span class="op">,</span></span>
-<span id="cb9-172"><a href="#cb9-172" aria-hidden="true" tabindex="-1"></a>})<span class="op">;</span></span>
-<span id="cb9-173"><a href="#cb9-173" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-174"><a href="#cb9-174" aria-hidden="true" tabindex="-1"></a>viewof lookback_discount_percent <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">number</span>([<span class="dv">0</span><span class="op">,</span> <span class="kw">Infinity</span>]<span class="op">,</span> {</span>
-<span id="cb9-175"><a href="#cb9-175" aria-hidden="true" tabindex="-1"></a>  <span class="dt">label</span><span class="op">:</span> <span class="st">"Discount (%)"</span><span class="op">,</span></span>
-<span id="cb9-176"><a href="#cb9-176" aria-hidden="true" tabindex="-1"></a>  <span class="dt">step</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span></span>
-<span id="cb9-177"><a href="#cb9-177" aria-hidden="true" tabindex="-1"></a>  <span class="dt">value</span><span class="op">:</span> <span class="dv">15</span><span class="op">,</span></span>
-<span id="cb9-178"><a href="#cb9-178" aria-hidden="true" tabindex="-1"></a>})<span class="op">;</span></span>
-<span id="cb9-179"><a href="#cb9-179" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-180"><a href="#cb9-180" aria-hidden="true" tabindex="-1"></a>viewof lookback_price_at_start <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">number</span>({</span>
-<span id="cb9-181"><a href="#cb9-181" aria-hidden="true" tabindex="-1"></a>  <span class="dt">label</span><span class="op">:</span> <span class="st">"Stock Price (start)"</span><span class="op">,</span></span>
-<span id="cb9-182"><a href="#cb9-182" aria-hidden="true" tabindex="-1"></a>  <span class="dt">type</span><span class="op">:</span> <span class="st">"number"</span><span class="op">,</span></span>
-<span id="cb9-183"><a href="#cb9-183" aria-hidden="true" tabindex="-1"></a>  <span class="dt">step</span><span class="op">:</span> <span class="fl">0.5</span><span class="op">,</span></span>
-<span id="cb9-184"><a href="#cb9-184" aria-hidden="true" tabindex="-1"></a>  <span class="dt">value</span><span class="op">:</span> <span class="dv">100</span><span class="op">,</span></span>
-<span id="cb9-185"><a href="#cb9-185" aria-hidden="true" tabindex="-1"></a>})<span class="op">;</span></span>
-<span id="cb9-186"><a href="#cb9-186" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-187"><a href="#cb9-187" aria-hidden="true" tabindex="-1"></a>viewof lookback_price_at_purchase <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">number</span>([<span class="dv">0</span><span class="op">,</span> <span class="kw">Infinity</span>]<span class="op">,</span> {</span>
-<span id="cb9-188"><a href="#cb9-188" aria-hidden="true" tabindex="-1"></a>  <span class="dt">label</span><span class="op">:</span> <span class="st">"Stock Price (purchase date)"</span><span class="op">,</span></span>
-<span id="cb9-189"><a href="#cb9-189" aria-hidden="true" tabindex="-1"></a>  <span class="dt">type</span><span class="op">:</span> <span class="st">"number"</span><span class="op">,</span></span>
-<span id="cb9-190"><a href="#cb9-190" aria-hidden="true" tabindex="-1"></a>  <span class="dt">step</span><span class="op">:</span> <span class="fl">0.5</span><span class="op">,</span></span>
-<span id="cb9-191"><a href="#cb9-191" aria-hidden="true" tabindex="-1"></a>  <span class="dt">value</span><span class="op">:</span> <span class="dv">105</span><span class="op">,</span></span>
-<span id="cb9-192"><a href="#cb9-192" aria-hidden="true" tabindex="-1"></a>})<span class="op">;</span></span>
-<span id="cb9-193"><a href="#cb9-193" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-194"><a href="#cb9-194" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-195"><a href="#cb9-195" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span> <span class="vs">`&lt;hr&gt;`</span><span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb9" data-startfrom="151" data-source-offset="-81"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 150;"><span id="cb9-151"><a href="#cb9-151" aria-hidden="true" tabindex="-1"></a>viewof lookback_purchase_period_in_months <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>([<span class="dv">3</span><span class="op">,</span> <span class="dv">6</span><span class="op">,</span> <span class="dv">12</span>]<span class="op">,</span> {</span>
+<span id="cb9-152"><a href="#cb9-152" aria-hidden="true" tabindex="-1"></a>  <span class="dt">label</span><span class="op">:</span> <span class="st">"Purchase Period"</span><span class="op">,</span></span>
+<span id="cb9-153"><a href="#cb9-153" aria-hidden="true" tabindex="-1"></a>  <span class="dt">format</span><span class="op">:</span> (m) <span class="kw">=&gt;</span> <span class="vs">`</span><span class="sc">${</span>m<span class="sc">}</span><span class="vs"> months`</span><span class="op">,</span></span>
+<span id="cb9-154"><a href="#cb9-154" aria-hidden="true" tabindex="-1"></a>  <span class="dt">value</span><span class="op">:</span> <span class="dv">6</span><span class="op">,</span></span>
+<span id="cb9-155"><a href="#cb9-155" aria-hidden="true" tabindex="-1"></a>})<span class="op">;</span></span>
+<span id="cb9-156"><a href="#cb9-156" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-157"><a href="#cb9-157" aria-hidden="true" tabindex="-1"></a>viewof lookback_discount_percent <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">number</span>([<span class="dv">0</span><span class="op">,</span> <span class="kw">Infinity</span>]<span class="op">,</span> {</span>
+<span id="cb9-158"><a href="#cb9-158" aria-hidden="true" tabindex="-1"></a>  <span class="dt">label</span><span class="op">:</span> <span class="st">"Discount (%)"</span><span class="op">,</span></span>
+<span id="cb9-159"><a href="#cb9-159" aria-hidden="true" tabindex="-1"></a>  <span class="dt">step</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span></span>
+<span id="cb9-160"><a href="#cb9-160" aria-hidden="true" tabindex="-1"></a>  <span class="dt">value</span><span class="op">:</span> <span class="dv">15</span><span class="op">,</span></span>
+<span id="cb9-161"><a href="#cb9-161" aria-hidden="true" tabindex="-1"></a>})<span class="op">;</span></span>
+<span id="cb9-162"><a href="#cb9-162" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-163"><a href="#cb9-163" aria-hidden="true" tabindex="-1"></a>viewof lookback_price_at_start <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">number</span>({</span>
+<span id="cb9-164"><a href="#cb9-164" aria-hidden="true" tabindex="-1"></a>  <span class="dt">label</span><span class="op">:</span> <span class="st">"Stock Price (start)"</span><span class="op">,</span></span>
+<span id="cb9-165"><a href="#cb9-165" aria-hidden="true" tabindex="-1"></a>  <span class="dt">type</span><span class="op">:</span> <span class="st">"number"</span><span class="op">,</span></span>
+<span id="cb9-166"><a href="#cb9-166" aria-hidden="true" tabindex="-1"></a>  <span class="dt">step</span><span class="op">:</span> <span class="fl">0.5</span><span class="op">,</span></span>
+<span id="cb9-167"><a href="#cb9-167" aria-hidden="true" tabindex="-1"></a>  <span class="dt">value</span><span class="op">:</span> <span class="dv">100</span><span class="op">,</span></span>
+<span id="cb9-168"><a href="#cb9-168" aria-hidden="true" tabindex="-1"></a>})<span class="op">;</span></span>
+<span id="cb9-169"><a href="#cb9-169" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-170"><a href="#cb9-170" aria-hidden="true" tabindex="-1"></a>viewof lookback_price_at_purchase <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">number</span>([<span class="dv">0</span><span class="op">,</span> <span class="kw">Infinity</span>]<span class="op">,</span> {</span>
+<span id="cb9-171"><a href="#cb9-171" aria-hidden="true" tabindex="-1"></a>  <span class="dt">label</span><span class="op">:</span> <span class="st">"Stock Price (purchase date)"</span><span class="op">,</span></span>
+<span id="cb9-172"><a href="#cb9-172" aria-hidden="true" tabindex="-1"></a>  <span class="dt">type</span><span class="op">:</span> <span class="st">"number"</span><span class="op">,</span></span>
+<span id="cb9-173"><a href="#cb9-173" aria-hidden="true" tabindex="-1"></a>  <span class="dt">step</span><span class="op">:</span> <span class="fl">0.5</span><span class="op">,</span></span>
+<span id="cb9-174"><a href="#cb9-174" aria-hidden="true" tabindex="-1"></a>  <span class="dt">value</span><span class="op">:</span> <span class="dv">105</span><span class="op">,</span></span>
+<span id="cb9-175"><a href="#cb9-175" aria-hidden="true" tabindex="-1"></a>})<span class="op">;</span></span>
+<span id="cb9-176"><a href="#cb9-176" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-177"><a href="#cb9-177" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-178"><a href="#cb9-178" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span> <span class="vs">`&lt;hr&gt;`</span><span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-2-2" data-nodetype="declaration">
@@ -591,13 +575,13 @@ r &amp;= \biggl(\frac{A}{P}\biggl)^t - 1 \\
 </div>
 </div>
 </div>
-<div class="sourceCode cell-code hidden" id="cb10" data-startfrom="197" data-source-offset="-653"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 196;"><span id="cb10-197"><a href="#cb10-197" aria-hidden="true" tabindex="-1"></a>{</span>
-<span id="cb10-198"><a href="#cb10-198" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (lookback_price_at_start <span class="op">&lt;</span> lookback_price_at_purchase) {</span>
-<span id="cb10-199"><a href="#cb10-199" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="fu">html</span> <span class="vs">`The stock &lt;strong&gt;rose&lt;/strong&gt; in value.&lt;hr&gt;The </span><span class="sc">${</span>lookback_discount_percent<span class="sc">}</span><span class="vs">% discount is applied to the &lt;strong&gt;Stock Price (start)&lt;/strong&gt; price.`</span><span class="op">;</span></span>
-<span id="cb10-200"><a href="#cb10-200" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
-<span id="cb10-201"><a href="#cb10-201" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="fu">html</span> <span class="vs">`The stock &lt;strong&gt;fell&lt;/strong&gt; in value.&lt;hr&gt;The </span><span class="sc">${</span>lookback_discount_percent<span class="sc">}</span><span class="vs">% discount is applied to the &lt;strong&gt;Stock Price (purchase date)&lt;/strong&gt; price.`</span><span class="op">;</span></span>
-<span id="cb10-202"><a href="#cb10-202" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb10-203"><a href="#cb10-203" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb10" data-startfrom="180" data-source-offset="-653"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 179;"><span id="cb10-180"><a href="#cb10-180" aria-hidden="true" tabindex="-1"></a>{</span>
+<span id="cb10-181"><a href="#cb10-181" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (lookback_price_at_start <span class="op">&lt;</span> lookback_price_at_purchase) {</span>
+<span id="cb10-182"><a href="#cb10-182" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="fu">html</span> <span class="vs">`The stock &lt;strong&gt;rose&lt;/strong&gt; in value.&lt;hr&gt;The </span><span class="sc">${</span>lookback_discount_percent<span class="sc">}</span><span class="vs">% discount is applied to the &lt;strong&gt;Stock Price (start)&lt;/strong&gt; price.`</span><span class="op">;</span></span>
+<span id="cb10-183"><a href="#cb10-183" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb10-184"><a href="#cb10-184" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="fu">html</span> <span class="vs">`The stock &lt;strong&gt;fell&lt;/strong&gt; in value.&lt;hr&gt;The </span><span class="sc">${</span>lookback_discount_percent<span class="sc">}</span><span class="vs">% discount is applied to the &lt;strong&gt;Stock Price (purchase date)&lt;/strong&gt; price.`</span><span class="op">;</span></span>
+<span id="cb10-185"><a href="#cb10-185" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb10-186"><a href="#cb10-186" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-2-7" data-nodetype="expression">
@@ -605,8 +589,8 @@ r &amp;= \biggl(\frac{A}{P}\biggl)^t - 1 \\
 </div>
 </div>
 </div>
-<div class="sourceCode cell-code hidden" id="cb11" data-startfrom="205" data-source-offset="-1081"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 204;"><span id="cb11-205"><a href="#cb11-205" aria-hidden="true" tabindex="-1"></a>lookback_purchase_price_with_discount <span class="op">=</span> (<span class="fl">1.0</span> <span class="op">-</span> (lookback_discount_percent <span class="op">/</span> <span class="fl">100.0</span>)) <span class="op">*</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">min</span>(lookback_price_at_start<span class="op">,</span> lookback_price_at_purchase)<span class="op">;</span></span>
-<span id="cb11-206"><a href="#cb11-206" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span> <span class="vs">`&lt;hr&gt;`</span><span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb11" data-startfrom="188" data-source-offset="-1081"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 187;"><span id="cb11-188"><a href="#cb11-188" aria-hidden="true" tabindex="-1"></a>lookback_purchase_price_with_discount <span class="op">=</span> (<span class="fl">1.0</span> <span class="op">-</span> (lookback_discount_percent <span class="op">/</span> <span class="fl">100.0</span>)) <span class="op">*</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">min</span>(lookback_price_at_start<span class="op">,</span> lookback_price_at_purchase)<span class="op">;</span></span>
+<span id="cb11-189"><a href="#cb11-189" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span> <span class="vs">`&lt;hr&gt;`</span><span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-2-8" data-nodetype="declaration">
@@ -621,7 +605,7 @@ r &amp;= \biggl(\frac{A}{P}\biggl)^t - 1 \\
 </div>
 </div>
 </div>
-<div class="sourceCode cell-code hidden" id="cb12" data-startfrom="207" data-source-offset="-1243"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 206;"><span id="cb12-207"><a href="#cb12-207" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span> <span class="vs">`Each share is purchased for &lt;strong&gt;$</span><span class="sc">${</span>lookback_purchase_price_with_discount<span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">2</span>)<span class="sc">}</span><span class="vs">&lt;/strong&gt; and is immediately worth &lt;strong&gt;$</span><span class="sc">${</span>lookback_price_at_purchase<span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">2</span>)<span class="sc">}</span><span class="vs">&lt;/strong&gt;`</span><span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb12" data-startfrom="190" data-source-offset="-1243"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 189;"><span id="cb12-190"><a href="#cb12-190" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span> <span class="vs">`Each share is purchased for &lt;strong&gt;$</span><span class="sc">${</span>lookback_purchase_price_with_discount<span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">2</span>)<span class="sc">}</span><span class="vs">&lt;/strong&gt; and is immediately worth &lt;strong&gt;$</span><span class="sc">${</span>lookback_price_at_purchase<span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">2</span>)<span class="sc">}</span><span class="vs">&lt;/strong&gt;`</span><span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-2-10" data-nodetype="expression">
@@ -629,11 +613,11 @@ r &amp;= \biggl(\frac{A}{P}\biggl)^t - 1 \\
 </div>
 </div>
 </div>
-<div class="sourceCode cell-code hidden" id="cb13" data-startfrom="209" data-source-offset="-1434"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 208;"><span id="cb13-209"><a href="#cb13-209" aria-hidden="true" tabindex="-1"></a>lookback_average_escrow_time_in_months <span class="op">=</span> lookback_purchase_period_in_months <span class="op">/</span> <span class="fl">2.0</span><span class="op">;</span></span>
-<span id="cb13-210"><a href="#cb13-210" aria-hidden="true" tabindex="-1"></a>lookback_average_escrow_time_in_years <span class="op">=</span> lookback_average_escrow_time_in_months <span class="op">/</span> <span class="fl">12.0</span><span class="op">;</span></span>
-<span id="cb13-211"><a href="#cb13-211" aria-hidden="true" tabindex="-1"></a>lookback_interest_rate <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">pow</span>(lookback_price_at_purchase <span class="op">/</span> lookback_purchase_price_with_discount<span class="op">,</span> <span class="fl">1.0</span> <span class="op">/</span> lookback_average_escrow_time_in_years) <span class="op">-</span> <span class="fl">1.0</span><span class="op">;</span></span>
-<span id="cb13-212"><a href="#cb13-212" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-213"><a href="#cb13-213" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span> <span class="vs">`&lt;hr&gt;`</span><span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb13" data-startfrom="192" data-source-offset="-1434"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 191;"><span id="cb13-192"><a href="#cb13-192" aria-hidden="true" tabindex="-1"></a>lookback_average_escrow_time_in_months <span class="op">=</span> lookback_purchase_period_in_months <span class="op">/</span> <span class="fl">2.0</span><span class="op">;</span></span>
+<span id="cb13-193"><a href="#cb13-193" aria-hidden="true" tabindex="-1"></a>lookback_average_escrow_time_in_years <span class="op">=</span> lookback_average_escrow_time_in_months <span class="op">/</span> <span class="fl">12.0</span><span class="op">;</span></span>
+<span id="cb13-194"><a href="#cb13-194" aria-hidden="true" tabindex="-1"></a>lookback_interest_rate <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">pow</span>(lookback_price_at_purchase <span class="op">/</span> lookback_purchase_price_with_discount<span class="op">,</span> <span class="fl">1.0</span> <span class="op">/</span> lookback_average_escrow_time_in_years) <span class="op">-</span> <span class="fl">1.0</span><span class="op">;</span></span>
+<span id="cb13-195"><a href="#cb13-195" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-196"><a href="#cb13-196" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span> <span class="vs">`&lt;hr&gt;`</span><span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-2-11" data-nodetype="declaration">
@@ -662,7 +646,7 @@ r &amp;= \biggl(\frac{A}{P}\biggl)^t - 1 \\
 </div>
 </div>
 </div>
-<div class="sourceCode cell-code hidden" id="cb14" data-startfrom="214" data-source-offset="-1772"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 213;"><span id="cb14-214"><a href="#cb14-214" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span> <span class="vs">`Annualized interest rate: &lt;strong class="fs-1"&gt;</span><span class="sc">${</span>(<span class="fl">100.0</span> <span class="op">*</span> lookback_interest_rate)<span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">2</span>)<span class="sc">}</span><span class="vs">%&lt;/strong&gt;`</span><span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb14" data-startfrom="197" data-source-offset="-1772"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 196;"><span id="cb14-197"><a href="#cb14-197" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span> <span class="vs">`Annualized interest rate: &lt;strong class="fs-1"&gt;</span><span class="sc">${</span>(<span class="fl">100.0</span> <span class="op">*</span> lookback_interest_rate)<span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">2</span>)<span class="sc">}</span><span class="vs">%&lt;/strong&gt;`</span><span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-2-15" data-nodetype="expression">
@@ -671,7 +655,15 @@ r &amp;= \biggl(\frac{A}{P}\biggl)^t - 1 \\
 </div>
 </div>
 </div>
-</div>
+<p>The best ESPPs offer a lookback feature.</p>
+<p>With a lookback, the discount is applied to the price at the start of an offering period or the price on the purchase date, <em>whichever is lower</em>.</p>
+<p>“Whichever is lower” makes it difficult to lose.</p>
+<p>When the stock rises in value, shares are purchased at a discount from the earlier price, leading to even higher built-in profit.</p>
+<p>When the stock falls in value, shares are purchased at a discount from the current market price on the purchase date.</p>
+<p>There is profit in either scenario as long as the shares are sold immediately to lock in the gain.</p>
+<p>To calculate ESPP profit for your own plan that has a lookback feature, try the tool on the right.</p>
+<p>Try different scenarios, including ones where the stock loses value over the purchase period. It is still pretty good, right?</p>
+<p>A lookback feature, if it exists, will be described in the plan documents.</p>
 </section>
 <section id="caveats" class="level2">
 <h2 class="anchored" data-anchor-id="caveats">Caveats</h2>
