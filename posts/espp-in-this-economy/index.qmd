@@ -54,7 +54,40 @@ Selling immediately is crucial because holding the shares long-term is risky for
 
 The _potential_ tax benefits of long-term ownership are not compelling when weighed against the volatility of a single stock. One bad news story could wipe out the entire profit or even cause a net loss.^[Some ESPPs restrict employees from selling their purchased shares immediately. That makes participating in the ESPP more risky, and it may be too risky for some people in these cases.]
 
+
 ## Example
+
+```{ojs}
+//| classes: w-33-md m-1 p-2 float-end bg-light border border-primary-subtle
+
+html `<figcaption>ESPP Interest Rate Calculator</figcaption>`;
+
+viewof purchase_period_in_months = Inputs.select([3, 6, 12], {
+  label: "Purchase Period",
+  format: (m) => `${m} months`,
+  value: 6,
+});
+
+viewof discount_percent = Inputs.number([0, Infinity], {
+  label: "Discount (%)",
+  step: 1,
+  value: 15,
+});
+
+value_of_stock_per_dollar_contributed = (1.0 / (1.0 - (discount_percent / 100.0)));
+
+html `<hr>`;
+html `For every <strong>$1</strong> contributed, <strong>$${value_of_stock_per_dollar_contributed.toFixed(2)}</strong> worth of company stock is purchased`;
+
+average_escrow_time_in_months = purchase_period_in_months / 2.0;
+average_escrow_time_in_years = average_escrow_time_in_months / 12.0;
+interest_rate = Math.pow(value_of_stock_per_dollar_contributed, 1.0 / average_escrow_time_in_years) - 1.0;
+
+html `<hr>`;
+html `On average, money is escrowed for <strong>${average_escrow_time_in_months} months</strong>`;
+html `<hr>`;
+html `Annualized interest rate: <strong class="fs-1">${(100.0 * interest_rate).toFixed(2)}%</strong>`;
+```
 
 **Scenario**: I contributed $850 over 6 months to an ESPP and receive $1,000 worth of stock (15% discount).
 
@@ -108,60 +141,10 @@ To calculate ESPP profit for your own plan, try the tool on the right.
 
 In summary, the ESPP "sticker" discount rate of 5&ndash;15% is not the full story!
 
-```{ojs}
-//| panel: sidebar
-
-html `<figcaption>ESPP Interest Rate Calculator</figcaption>`;
-
-viewof purchase_period_in_months = Inputs.select([3, 6, 12], {
-  label: "Purchase Period",
-  format: (m) => `${m} months`,
-  value: 6,
-});
-
-viewof discount_percent = Inputs.number([0, Infinity], {
-  label: "Discount (%)",
-  step: 1,
-  value: 15,
-});
-
-value_of_stock_per_dollar_contributed = (1.0 / (1.0 - (discount_percent / 100.0)));
-
-html `<hr>`;
-html `For every <strong>$1</strong> contributed, <strong>$${value_of_stock_per_dollar_contributed.toFixed(2)}</strong> worth of company stock is purchased`;
-
-average_escrow_time_in_months = purchase_period_in_months / 2.0;
-average_escrow_time_in_years = average_escrow_time_in_months / 12.0;
-interest_rate = Math.pow(value_of_stock_per_dollar_contributed, 1.0 / average_escrow_time_in_years) - 1.0;
-
-html `<hr>`;
-html `On average, money is escrowed for <strong>${average_escrow_time_in_months} months</strong>`;
-html `<hr>`;
-html `Annualized interest rate: <strong class="fs-1">${(100.0 * interest_rate).toFixed(2)}%</strong>`;
-```
-
 ## Lookback
 
-The best ESPPs offer a lookback feature.
-
-With a lookback, the discount is applied to the price at the start of an offering period or the price on the purchase date, _whichever is lower_.
-
-"Whichever is lower" makes it difficult to lose.
-
-When the stock rises in value, shares are purchased at a discount from the earlier price, leading to even higher built-in profit.
-
-When the stock falls in value, shares are purchased at a discount from the current market price on the purchase date.
-
-There is profit in either scenario as long as the shares are sold immediately to lock in the gain.
-
-To calculate ESPP profit for your own plan that has a lookback feature, try the tool on the right.
-
-Try different scenarios, including ones where the stock loses value over the purchase period. It is still pretty good, right?
-
-A lookback feature, if it exists, will be described in the plan documents.
-
 ```{ojs}
-//| panel: sidebar
+//| classes: w-33-md m-1 p-2 float-end bg-light border border-primary-subtle
 
 html `<figcaption>ESPP Interest Rate Calculator (with lookback)</figcaption>`;
 
@@ -213,6 +196,24 @@ lookback_interest_rate = Math.pow(lookback_price_at_purchase / lookback_purchase
 html `<hr>`;
 html `Annualized interest rate: <strong class="fs-1">${(100.0 * lookback_interest_rate).toFixed(2)}%</strong>`;
 ```
+
+The best ESPPs offer a lookback feature.
+
+With a lookback, the discount is applied to the price at the start of an offering period or the price on the purchase date, _whichever is lower_.
+
+"Whichever is lower" makes it difficult to lose.
+
+When the stock rises in value, shares are purchased at a discount from the earlier price, leading to even higher built-in profit.
+
+When the stock falls in value, shares are purchased at a discount from the current market price on the purchase date.
+
+There is profit in either scenario as long as the shares are sold immediately to lock in the gain.
+
+To calculate ESPP profit for your own plan that has a lookback feature, try the tool on the right.
+
+Try different scenarios, including ones where the stock loses value over the purchase period. It is still pretty good, right?
+
+A lookback feature, if it exists, will be described in the plan documents.
 
 ## Caveats
 

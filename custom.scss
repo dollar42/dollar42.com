@@ -1,5 +1,14 @@
 /*-- scss:rules --*/
 
+.w-33-md {
+    width: 100%;
+}
+@include media-breakpoint-up(lg) {
+    .w-33-md {
+        max-width: 33%;
+    }
+}
+
 // Navbar looks better if it does not take up the full width on large screens
 .navbar-container {
     // Replacing .container-fluid with .container-lg would be best, but this is
