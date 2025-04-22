@@ -13,11 +13,978 @@
 <url>https://www.dollar42.com/favicon.png</url>
 <title>Dollar42</title>
 <link>https://www.dollar42.com/</link>
-<height>116</height>
-<width>44</width>
 </image>
 <generator>quarto-1.6.42</generator>
-<lastBuildDate>Wed, 02 Apr 2025 04:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 21 Apr 2025 04:00:00 GMT</lastBuildDate>
+<item>
+  <title>ESPP? In This Economy?</title>
+  <link>https://www.dollar42.com/posts/espp-in-this-economy/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="cell page-columns page-full" data-fig-width="2" data-fig-height="5" data-layout-align="default">
+
+<div class="no-row-height column-margin column-container"><div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<svg width="192" height="480" viewbox="0.00 0.00 146.00 268.00" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" style="; max-width: none; max-height: none">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 264)">
+<title>G</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-264 142,-264 142,4 -4,4"></polygon>
+<!-- splitrect -->
+<g id="node1" class="node">
+<title>splitrect</title>
+<polygon fill="lightgreen" stroke="transparent" points="9,-175 9,-255 44,-255 44,-175 9,-175"></polygon>
+<polygon fill="none" stroke="black" points="9,-175 9,-255 44,-255 44,-175 9,-175"></polygon>
+<text text-anchor="start" x="10.56" y="-210.8" font-family="Times,serif" font-size="14.00">Profit</text>
+<polygon fill="lightblue" stroke="transparent" points="44,-225 44,-255 129,-255 129,-225 44,-225"></polygon>
+<polygon fill="none" stroke="black" points="44,-225 44,-255 129,-255 129,-225 44,-225"></polygon>
+<text text-anchor="start" x="61.22" y="-235.8" font-family="Times,serif" font-size="14.00">Discount</text>
+<polygon fill="lightblue" stroke="transparent" points="44,-175 44,-225 129,-225 129,-175 44,-175"></polygon>
+<polygon fill="none" stroke="black" points="44,-175 44,-225 129,-225 129,-175 44,-175"></polygon>
+<text text-anchor="start" x="58.51" y="-204.2" font-family="Times,serif" font-size="14.00">Lookback</text>
+<text text-anchor="start" x="58.9" y="-187.4" font-family="Times,serif" font-size="14.00">(optional)</text>
+<polygon fill="grey" stroke="transparent" points="9,-5 9,-175 44,-175 44,-5 9,-5"></polygon>
+<polygon fill="none" stroke="black" points="9,-5 9,-175 44,-175 44,-5 9,-5"></polygon>
+<polygon fill="grey" stroke="transparent" points="44,-5 44,-175 129,-175 129,-5 44,-5"></polygon>
+<polygon fill="none" stroke="black" points="44,-5 44,-175 129,-175 129,-5 44,-5"></polygon>
+<text text-anchor="start" x="58.52" y="-94.2" font-family="Times,serif" font-size="14.00">After-Tax</text>
+<text text-anchor="start" x="48" y="-77.4" font-family="Times,serif" font-size="14.00">Contributions</text>
+<polygon fill="none" stroke="black" points="8,-4 8,-256 130,-256 130,-4 8,-4"></polygon>
+</g>
+</g>
+</svg>
+</div>
+<p></p><figcaption> An ESPP allows employees to purchase shares at a discount with after-tax money. There is built-in profit when the shares are purchased.</figcaption> </figure><p></p>
+</div>
+</div></div></div>
+<p>Most people misunderstand Employee Stock Purchase Plans (ESPPs).</p>
+<p>Even during the COVID stock market crash, I contributed the maximum to my employer’s ESPP.</p>
+<p>As the stock price crashed, <strong>I still earned a 91.57% interest rate on my contributions</strong>.</p>
+<p>A good ESPP generates hundreds or thousands of extra dollars with little risk. The strategy is simple:</p>
+<ol type="1">
+<li>Contribute the maximum feasible, respecting other short-term goals.</li>
+<li>Receive shares at a 5–15% discount every purchase period (typically 3 or 6 months).</li>
+<li><strong>Sell the shares immediately and skim the profit as extra income.</strong></li>
+<li>Repeat every purchase period.</li>
+</ol>
+<p>Selling immediately is crucial because holding the shares long-term is risky for most people.</p>
+<p>The <em>potential</em> tax benefits of long-term ownership are not compelling when weighed against the volatility of a single stock. One bad news story could wipe out the entire profit or even cause a net loss.<sup>1</sup></p>
+<section id="example" class="level2">
+<h2 class="anchored" data-anchor-id="example">Example</h2>
+<div class="cell w-33-md m-1 p-2 float-end bg-light border border-primary-subtle">
+<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="62" data-source-offset="-1" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 61;"><span id="cb1-62"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span> <span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`&lt;figcaption&gt;ESPP Interest Rate Calculator&lt;/figcaption&gt;`</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span></code></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-1" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<div class="sourceCode cell-code hidden" id="cb2" data-startfrom="64" data-source-offset="-65" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 63;"><span id="cb2-64">viewof purchase_period_in_months <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> Inputs<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">select</span>([<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">6</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">12</span>]<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> {</span>
+<span id="cb2-65">  <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">label</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Purchase Period"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb2-66">  <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">format</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> (m) <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">=&gt;</span> <span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">${</span>m<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;"> months`</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb2-67">  <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">value</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">6</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb2-68">})<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb2-69"></span>
+<span id="cb2-70">viewof discount_percent <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> Inputs<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">number</span>([<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">Infinity</span>]<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> {</span>
+<span id="cb2-71">  <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">label</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Discount (%)"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb2-72">  <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">step</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb2-73">  <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">value</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">15</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb2-74">})<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb2-75"></span>
+<span id="cb2-76">value_of_stock_per_dollar_contributed <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> (<span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1.0</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> (<span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1.0</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span> (discount_percent <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">100.0</span>)))<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb2-77"></span>
+<span id="cb2-78"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span> <span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`&lt;hr&gt;`</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span></code></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-3" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-4" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-5" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<div class="sourceCode cell-code hidden" id="cb3" data-startfrom="79" data-source-offset="-414" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 78;"><span id="cb3-79"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span> <span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`For every &lt;strong&gt;$1&lt;/strong&gt; contributed, &lt;strong&gt;$</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">${</span>value_of_stock_per_dollar_contributed<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">toFixed</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>)<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">&lt;/strong&gt; worth of company stock is purchased`</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span></code></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-6" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<div class="sourceCode cell-code hidden" id="cb4" data-startfrom="81" data-source-offset="-572" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 80;"><span id="cb4-81">average_escrow_time_in_months <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> purchase_period_in_months <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2.0</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb4-82">average_escrow_time_in_years <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> average_escrow_time_in_months <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">12.0</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb4-83">interest_rate <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">Math</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">pow</span>(value_of_stock_per_dollar_contributed<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1.0</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> average_escrow_time_in_years) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1.0</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb4-84"></span>
+<span id="cb4-85"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span> <span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`&lt;hr&gt;`</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span></code></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-7" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-8" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-9" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-10" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<div class="sourceCode cell-code hidden" id="cb5" data-startfrom="86" data-source-offset="-827" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 85;"><span id="cb5-86"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span> <span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`On average, money is escrowed for &lt;strong&gt;</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">${</span>average_escrow_time_in_months<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;"> months&lt;/strong&gt;`</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span></code></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-11" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<div class="sourceCode cell-code hidden" id="cb6" data-startfrom="87" data-source-offset="-926" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 86;"><span id="cb6-87"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span> <span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`&lt;hr&gt;`</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span></code></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-12" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<div class="sourceCode cell-code hidden" id="cb7" data-startfrom="88" data-source-offset="-939" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 87;"><span id="cb7-88"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span> <span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`Annualized interest rate: &lt;strong class="fs-1"&gt;</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">${</span>(<span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">100.0</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> interest_rate)<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">toFixed</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>)<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">%&lt;/strong&gt;`</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span></code></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-13" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</div>
+<p><strong>Scenario</strong>: I contributed $850 over 6 months to an ESPP and receive $1,000 worth of stock (15% discount).</p>
+<p><strong>Question</strong>: What is the effective annualized interest rate if I sell immediately and receive $1,000 in cash (skimming $150 of profit)?</p>
+<p>I think it is 91.57%. Can it really be true?</p>
+<p>Consider that if I have $850 in some account and want my balance to be $1,000 in a year, I need a 17.65% interest rate:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Bflalign%7D%0AA%20&amp;=%20P(1%20+%20r)%20%5C%5C%0A1000%20&amp;=%20850(1%20+%20r)%20%5C%5C%0Ar%20&amp;=%20%5Cfrac%7B1000%7D%7B850%7D%20-%201%20%5C%5C%0A%20%20&amp;=%200.1765%20%5C%5C%0A%20%20&amp;=%2017.65%5C%25%0A%5Cend%7Bflalign%7D%0A"></p>
+<p>It takes a <em>full year</em> at 17.65% interest to generate $150 from $850.</p>
+<p>Intuitively the ESPP equivalent rate must be higher than an account paying 17.65% interest.</p>
+<p>With ESPP, I contributed $71 twice per month for 6 months (totaling approximately $850).</p>
+<p>The first $71 was escrowed for about 6 months, the next $71 for 5.5 months, etc. until the final contribution for only a few days or weeks. On <em>average</em>, one of my dollars was tied up for approximately 3 months (half of the purchase period).</p>
+<p>So yes, $850 that turns into $1,000 in 3 months works out to an exceptionally high 91.57% annualized rate:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Bflalign%7D%0Ar%20&amp;=%20%5Cbiggl(%5Cfrac%7BA%7D%7BP%7D%5Cbiggl)%5Et%20-%201%20%5C%5C%0A%20%20&amp;=%20%5Cbiggl(%5Cfrac%7B1%7D%7B1%20-%20discount%7D%5Cbiggl)%5Et%20-%201%20%5C%5C%0A%20%20&amp;=%20%5Cbiggl(%5Cfrac%7B1%7D%7B0.85%7D%5Cbiggl)%5E4%20-%201%5C%5C%0A%20%20&amp;=%200.9157%20%5C%5C%0A%20%20&amp;=%2091.57%5C%25%0A%5Cend%7Bflalign%7D%0A"></p>
+<p><small><img src="https://latex.codecogs.com/png.latex?t=4"> because there are 4 3-month quarters in a year.</small></p>
+<p>To calculate ESPP profit for your own plan, try the tool on the right.</p>
+<p>In summary, the ESPP “sticker” discount rate of 5–15% is not the full story!</p>
+</section>
+<section id="lookback" class="level2">
+<h2 class="anchored" data-anchor-id="lookback">Lookback</h2>
+<div class="cell w-33-md m-1 p-2 float-end bg-light border border-primary-subtle">
+<div class="sourceCode cell-code hidden" id="cb8" data-startfrom="140" data-source-offset="-1" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 139;"><span id="cb8-140"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span> <span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`&lt;figcaption&gt;ESPP Interest Rate Calculator (with lookback)&lt;/figcaption&gt;`</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span></code></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-2-1" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<div class="sourceCode cell-code hidden" id="cb9" data-startfrom="142" data-source-offset="-81" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 141;"><span id="cb9-142">viewof lookback_purchase_period_in_months <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> Inputs<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">select</span>([<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">6</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">12</span>]<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> {</span>
+<span id="cb9-143">  <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">label</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Purchase Period"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb9-144">  <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">format</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> (m) <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">=&gt;</span> <span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">${</span>m<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;"> months`</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb9-145">  <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">value</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">6</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb9-146">})<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb9-147"></span>
+<span id="cb9-148">viewof lookback_discount_percent <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> Inputs<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">number</span>([<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">Infinity</span>]<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> {</span>
+<span id="cb9-149">  <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">label</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Discount (%)"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb9-150">  <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">step</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb9-151">  <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">value</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">15</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb9-152">})<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb9-153"></span>
+<span id="cb9-154">viewof lookback_price_at_start <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> Inputs<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">number</span>({</span>
+<span id="cb9-155">  <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">label</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Stock Price (start)"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb9-156">  <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">type</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"number"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb9-157">  <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">step</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.5</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb9-158">  <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">value</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">100</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb9-159">})<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb9-160"></span>
+<span id="cb9-161">viewof lookback_price_at_purchase <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> Inputs<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">number</span>([<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">Infinity</span>]<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> {</span>
+<span id="cb9-162">  <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">label</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Stock Price (purchase date)"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb9-163">  <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">type</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"number"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb9-164">  <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">step</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.5</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb9-165">  <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">value</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">:</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">105</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb9-166">})<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb9-167"></span>
+<span id="cb9-168"></span>
+<span id="cb9-169"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span> <span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`&lt;hr&gt;`</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span></code></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-2-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-2-3" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-2-4" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-2-5" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-2-6" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<div class="sourceCode cell-code hidden" id="cb10" data-startfrom="171" data-source-offset="-653" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 170;"><span id="cb10-171">{</span>
+<span id="cb10-172">  <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> (lookback_price_at_start <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;</span> lookback_price_at_purchase) {</span>
+<span id="cb10-173">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span> <span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`The stock &lt;strong&gt;rose&lt;/strong&gt; in value.&lt;hr&gt;The </span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">${</span>lookback_discount_percent<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">% discount is applied to the &lt;strong&gt;Stock Price (start)&lt;/strong&gt; price.`</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb10-174">  } <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">else</span> {</span>
+<span id="cb10-175">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span> <span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`The stock &lt;strong&gt;fell&lt;/strong&gt; in value.&lt;hr&gt;The </span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">${</span>lookback_discount_percent<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">% discount is applied to the &lt;strong&gt;Stock Price (purchase date)&lt;/strong&gt; price.`</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb10-176">  }</span>
+<span id="cb10-177">}</span></code></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-2-7" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<div class="sourceCode cell-code hidden" id="cb11" data-startfrom="179" data-source-offset="-1081" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 178;"><span id="cb11-179">lookback_purchase_price_with_discount <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> (<span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1.0</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span> (lookback_discount_percent <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">100.0</span>)) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">Math</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">min</span>(lookback_price_at_start<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> lookback_price_at_purchase)<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb11-180"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span> <span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`&lt;hr&gt;`</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span></code></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-2-8" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-2-9" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<div class="sourceCode cell-code hidden" id="cb12" data-startfrom="181" data-source-offset="-1243" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 180;"><span id="cb12-181"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span> <span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`Each share is purchased for &lt;strong&gt;$</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">${</span>lookback_purchase_price_with_discount<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">toFixed</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>)<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">&lt;/strong&gt; and is immediately worth &lt;strong&gt;$</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">${</span>lookback_price_at_purchase<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">toFixed</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>)<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">&lt;/strong&gt;`</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span></code></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-2-10" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<div class="sourceCode cell-code hidden" id="cb13" data-startfrom="183" data-source-offset="-1434" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 182;"><span id="cb13-183">lookback_average_escrow_time_in_months <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> lookback_purchase_period_in_months <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2.0</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb13-184">lookback_average_escrow_time_in_years <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> lookback_average_escrow_time_in_months <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">12.0</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb13-185">lookback_interest_rate <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">Math</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">pow</span>(lookback_price_at_purchase <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> lookback_purchase_price_with_discount<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1.0</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">/</span> lookback_average_escrow_time_in_years) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1.0</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb13-186"></span>
+<span id="cb13-187"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span> <span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`&lt;hr&gt;`</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span></code></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-2-11" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-2-12" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-2-13" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-2-14" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<div class="sourceCode cell-code hidden" id="cb14" data-startfrom="188" data-source-offset="-1772" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 187;"><span id="cb14-188"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span> <span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`Annualized interest rate: &lt;strong class="fs-1"&gt;</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">${</span>(<span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">100.0</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> lookback_interest_rate)<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">toFixed</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>)<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">%&lt;/strong&gt;`</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span></code></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-2-15" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</div>
+<p>The best ESPPs offer a lookback feature.</p>
+<p>With a lookback, the discount is applied to the price at the start of an offering period or the price on the purchase date, <em>whichever is lower</em>.</p>
+<p>“Whichever is lower” makes it difficult to lose.</p>
+<p>When the stock rises in value, shares are purchased at a discount from the earlier price, leading to even higher built-in profit.</p>
+<p>When the stock falls in value, shares are purchased at a discount from the current market price on the purchase date.</p>
+<p>There is profit in either scenario as long as the shares are sold immediately to lock in the gain.</p>
+<p>To calculate ESPP profit for your own plan that has a lookback feature, try the tool on the right.</p>
+<p>Try different scenarios, including ones where the stock loses value over the purchase period. It is still pretty good, right?</p>
+<p>A lookback feature, if it exists, will be described in the plan documents.</p>
+</section>
+<section id="caveats" class="level2">
+<h2 class="anchored" data-anchor-id="caveats">Caveats</h2>
+<p>ESPP administration and tax law have caveats that change the math in some scenarios. However, I have never seen these issues alone make a plan undesirable.</p>
+<p>For instance, volatility in the stock price between the purchase date and when the stock can later be sold means the profit will inevitably be a little higher or lower than the calculators show. I limit the impact of this volatility by having a recurring reminder to sell as quickly as possible.</p>
+<p>Commissions and fees reduce the effective interest rate slightly.</p>
+<p>Some plans allow purchasing partial shares. Others may only allow whole shares; in that case, the “change” will be refunded on a future paycheck.</p>
+<p>Qualified (tax efficient) plans under <a href="https://www.law.cornell.edu/uscode/text/26/423">§423</a> are limited to $25,000 of stock per year<sup>2</sup>. With a 15% discount, the maximum contribution works out to be $21,250.</p>
+<p>Plans with a lookback feature calculate the maximum number of <em>shares</em> per purchase period from the price at the start of the offering period. If the stock falls in value during this offering period, the maximum number of shares may be worth less than the maximum <em>dollar</em> contribution in later purchase periods. Money that cannot be used to purchase shares will be refunded, but it will also lower the effective interest rate.</p>
+<p>Most plans allow employees to withdraw during a purchase period and have the accrued money refunded on a future paycheck. There may be significant delay between withdrawing from the plan and receiving the money.</p>
+<p>Some people consider strategically withdrawing based on movement in the stock price. I have yet to see a case where the return on hassle is compelling. ESPP is best left as a mechanical process to generate extra income every purchase period.</p>
+<p>If an employee is terminated (voluntarily or involuntarily), money contributed during a purchase period will be refunded on their final paycheck or shortly after.</p>
+</section>
+<section id="do-you-need-help" class="level2">
+<h2 class="anchored" data-anchor-id="do-you-need-help">Do you need help?</h2>
+<p>How does an ESPP fit into a tax-efficient financial plan? It will always come down to an individual’s specific goals and circumstances.</p>
+<p>But good plans have such a high effective interest rate that anyone who can afford to defer income for a few months may want to consider them.</p>
+<p>I offer consulting about ESPP and many other tax topics. <a href="../../about.html">Reach out if I can help</a>.</p>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Some ESPPs restrict employees from selling their purchased shares immediately. That makes participating in the ESPP more risky, and it may be too risky for some people in these cases.↩︎</p></li>
+<li id="fn2"><p>$25,000 was <a href="https://www.govinfo.gov/content/pkg/STATUTE-78/pdf/STATUTE-78-Pg19.pdf">written into law in 1964</a> and has not changed since. The <a href="https://www.bls.gov/data/inflation_calculator.htm">BLS CPI calculator</a> estimates this amount as $258,737 in today’s dollars as of March 2025.↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <guid>https://www.dollar42.com/posts/espp-in-this-economy/</guid>
+  <pubDate>Mon, 21 Apr 2025 04:00:00 GMT</pubDate>
+  <media:content url="https://www.dollar42.com/posts/espp-in-this-economy/card.png" medium="image" type="image/png" height="75" width="144"/>
+</item>
 <item>
   <title>Millions Managed with a Google Sheet</title>
   <link>https://www.dollar42.com/posts/millions-managed-with-a-google-sheet/</link>
