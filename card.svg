@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1200"
+   height="628"
+   viewBox="0 0 1200 628"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (e7c3feb1, 2024-10-09)"
+   sodipodi:docname="card.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showguides="true"
+     inkscape:zoom="0.7975"
+     inkscape:cx="600"
+     inkscape:cy="313.47962"
+     inkscape:window-width="1440"
+     inkscape:window-height="847"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#343a40;stroke-width:0.983047;fill-opacity:1"
+       id="rect1"
+       width="1200"
+       height="125"
+       x="0"
+       y="0"
+       inkscape:label="bg-light" />
+    <rect
+       style="fill:#212529;fill-opacity:1;stroke-width:2.41198"
+       id="rect2"
+       width="1200"
+       height="503"
+       x="0"
+       y="125"
+       inkscape:label="bg-dark" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:85.3331px;font-family:Sriracha;-inkscape-font-specification:Sriracha;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#b2d67f;fill-opacity:1;stroke-width:0.999998"
+       x="19.232002"
+       y="90.44664"
+       id="text2"
+       inkscape:label="text-dollar-sign"><tspan
+         sodipodi:role="line"
+         id="tspan2"
+         x="19.232002"
+         y="90.44664"
+         style="stroke-width:0.999998">$</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:85.3331px;font-family:Sriracha;-inkscape-font-specification:Sriracha;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#b2d67f;fill-opacity:1;stroke-width:0.999998"
+       x="858.63568"
+       y="90.446152"
+       id="text3"
+       inkscape:label="text-logo"><tspan
+         sodipodi:role="line"
+         id="tspan3"
+         x="858.63568"
+         y="90.446152"
+         style="stroke-width:0.999998">Dollar42</tspan></text>
+  </g>
+</svg>
