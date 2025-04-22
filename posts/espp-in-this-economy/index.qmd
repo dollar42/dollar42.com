@@ -224,7 +224,7 @@ Most plans allow employees to withdraw during a purchase period and have the esc
 
 Some people consider strategically withdrawing based on movement in the stock price. I have yet to see a case where the return on hassle is compelling. ESPP is best left as a mechanical process to generate extra income every purchase period.
 
-If an employee is terminated (voluntarily or involuntarily), money contributed during a purchase period will be refunded on their final paycheck or shortly after.
+If an employee is terminated (voluntarily or involuntarily), escrowed money will be refunded on their final paycheck or shortly after without purchasing shares.
 
 ## Do you need help?
 
