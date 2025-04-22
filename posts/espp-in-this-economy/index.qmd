@@ -220,7 +220,7 @@ Qualified (tax efficient) plans under [&sect;423](https://www.law.cornell.edu/us
 
 Plans with a lookback feature calculate the maximum number of _shares_ per purchase period from the price at the start of the offering period. If the stock falls in value during this offering period, the maximum number of shares may be worth less than the maximum _dollar_ contribution in later purchase periods. Money that cannot be used to purchase shares will be refunded, but it will also lower the effective interest rate.
 
-Most plans allow employees to withdraw during a purchase period and have the escrowed money refunded on a future paycheck. There may be significant delay between withdrawing from the plan and receiving the money.
+Most plans allow employees to withdraw during a purchase period and have the escrowed money refunded on a future paycheck without purchasing shares. There may be significant delay between withdrawing from the plan and receiving the money.
 
 Some people consider strategically withdrawing based on movement in the stock price. I have yet to see a case where the return on hassle is compelling. ESPP is best left as a mechanical process to generate extra income every purchase period.
 
