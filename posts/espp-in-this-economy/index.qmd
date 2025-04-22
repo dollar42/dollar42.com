@@ -1,10 +1,9 @@
 ---
 title: "ESPP? In This Economy?"
-description: "Employee Stock Purchase Plans can generate thousands in extra income no matter what happens in the stock market."
+description: "Employee Stock Purchase Plans can generate thousands of extra dollars of income at interest rates of 91% or higher."
 date: "2025-04-21"
-draft: true
 echo: false
-image: "image.png"
+image: "card.png"
 format:
   html: {}
 ---
